@@ -6,8 +6,9 @@ import plotly
 import csv
 import os #os module imported here
 from function_add.watchfolder import watch_dog
+
 # from app_tester import move_to_directory
-from class_add.DataProcessing import kupa
+from class_add.DataProcessing import DataMove
 
 
 # import pandas as pd
@@ -17,7 +18,6 @@ path = r'D:\STUDIA\Inżynierka\test\\'
 moveto = r'D:\STUDIA\Inżynierka\testowy\\'
 freq = 0.5
 
-global zebra
 
 
 # def get_logo():
@@ -296,6 +296,6 @@ def update_graph_scatter():
 #     return {'data': traces, 'layout': layout}
 
 #
-if __name__ == '__main__':
-    zebra = kupa(True)
-    app.run_server(debug=True)
+# if __name__ == '__main__':
+#     zebra = kupa(True)
+#     app.run_server(debug=True)

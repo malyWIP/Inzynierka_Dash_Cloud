@@ -1,7 +1,7 @@
 import os, shutil, time
 
 
-class kupa:
+class DataMove:
 
     state = True
 
