@@ -2,9 +2,9 @@
 from class_add.DataProcessing import DataMove
 from dash_web.Controller_Interaction import*
 
-global zebra
+global process_tester
 
-zebra = DataMove(True)
+process_tester = DataMove(True)
 
 
 if __name__ == '__main__':

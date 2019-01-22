@@ -4,10 +4,16 @@ import os
 from function_add.watchfolder import*
 import sys
 
-
 ###########################
 # Data Manipulation / Model
 ###########################
+
+
+def edge_sharpness_result(tab):
+    s = sum(tab)
+    x = len(tab)
+    m = float(s/x)
+    return m
 
 
 def force_motion_value(plots):
@@ -18,7 +24,7 @@ def force_motion_value(plots):
     for row in plots:
         if line_count < 280:
             line_count += 1
-        else:
+        elif row.__len__() > 2 and row[3] != '':
             x.append(float(row[1]))
             y.append(float(row[2]))
             line_count += 1
@@ -32,8 +38,9 @@ def motion_value(plots):
         if line_count < 280:
             line_count += 1
         else:
-            y.append(float(row[2]))
-            line_count += 1
+            if row[1] != '':
+                y.append(float(row[2]))
+                line_count += 1
     return y
 
 
@@ -44,8 +51,9 @@ def force_value(plots):
         if line_count < 280:
             line_count += 1
         else:
-            y.append(float(row[1]))
-            line_count += 1
+            if row[1] != '':
+                y.append(float(row[1]))
+                line_count += 1
     return y
 
 
@@ -58,14 +66,12 @@ def get_latest(folder):
         return files[0]
 
 
-def file_to_analizes():
+def file_to_analizes(folder):
     time_sorted_list = None
     try:
-        folder_path = r'D:\STUDIA\Inżynierka\testowy'
-        time_sorted_list = get_latest(folder_path)
+        # folder_path = r'D:\STUDIA\Inżynierka\testowy'
+        time_sorted_list = get_latest(folder)
 
-        # except FileNotFoundError:
-        #     print('bład')
     except IndexError:
         print("IndexError:", sys.exc_info()[0])
     if time_sorted_list is None:

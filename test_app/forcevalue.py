@@ -1,7 +1,7 @@
 import csv
 import os #os module imported here
-# from app_tester import move_to_directory
 import time
+
 
 def get_latest(folder):
     files = [os.path.join(folder, f) for f in os.listdir(folder) if f.endswith('.csv')]
@@ -29,18 +29,23 @@ def file_to_analizes():
         plots = csv.reader(csv_file, delimiter=';')
     return plots
 
+
 def force_motion_value(plots):
     line_count = 0
+    row_count = 0
     x = []
     y = []
 
     for row in plots:
-        if line_count < 280:
+
+        if line_count <= 280:
             line_count += 1
-        else:
-            x.append(float(row[1]))
-            y.append(float(row[2]))
-            line_count += 1
+            row_count +=1
+        elif line_count > 280 and row != 'Sequence Editor':
+                x.append(float(row[1]))
+                y.append(float(row[2]))
+                line_count += 1
+                row_count += 1
     return x, y
 
 
@@ -67,11 +72,11 @@ def motion_value(plots):
             line_count += 1
     return y
 
-if __name__ == '__main__':
-    while True:
-
-        # print(force_motion_value(file_to_analizes())[1])
-        print(motion_value(file_to_analizes()))
-        print(force_value(file_to_analizes()))
-
-        time.sleep(1)
+# if __name__ == '__main__':
+#     while True:
+#
+#         print(force_motion_value(file_to_analizes())[1])
+#         # print(motion_value(file_to_analizes()))
+#         # print(force_value(file_to_analizes()))
+#
+#         time.sleep(1)

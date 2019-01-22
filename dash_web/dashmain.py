@@ -41,9 +41,10 @@ def force_motion_value(plots):
         if line_count < 280:
             line_count += 1
         else:
-            x.append(float(row[1]))
-            y.append(float(row[2]))
-            line_count += 1
+            if line_count <400:
+                x.append(float(row[1]))
+                y.append(float(row[2]))
+                line_count += 1
     return x, y
 
 
