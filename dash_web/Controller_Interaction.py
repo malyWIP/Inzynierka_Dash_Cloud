@@ -2,7 +2,7 @@
 
 from dash_web.Model_Manipulation import*
 from dash_web.View_Layout import*
-from main.app import process_tester
+from app import process_tester
 from dash.dependencies import Output, Event, Input
 import plotly
 
