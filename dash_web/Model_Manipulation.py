@@ -20,14 +20,16 @@ def force_motion_value(plots):
     line_count = 0
     x = []
     y = []
-
-    for row in plots:
-        if line_count < 280:
-            line_count += 1
-        elif row.__len__() > 2 and row[3] != '':
-            x.append(float(row[1]))
-            y.append(float(row[2]))
-            line_count += 1
+    try:
+        for row in plots:
+            if line_count < 280:
+                line_count += 1
+            elif row.__len__() > 2 and row[3] != '':
+                x.append(float(row[1]))
+                y.append(float(row[2]))
+                line_count += 1
+    except TypeError:
+        print('Brak plikow CSV')
     return x, y
 
 

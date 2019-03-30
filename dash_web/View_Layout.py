@@ -28,6 +28,7 @@ app.layout = html.Div([
     html.Div([
         html.Button('Start', id='Start', n_clicks='0'),
         html.Button('Stop', id='Stop', n_clicks='0'),
+        html.Button('Reset', id='Reset', n_clicks='0'),
         html.Div(id='container')
     ]),
     html.Div([
