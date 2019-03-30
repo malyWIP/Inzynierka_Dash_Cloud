@@ -49,14 +49,26 @@ def force_motion_value(plots):
     return x, y
 
 
-def force_value(plots):
+def data_separate(plots):
     line_count = 0
     y = []
     for row in plots:
-        if line_count < 280:
+        if line_count < 10:
             line_count += 1
-        else:
+        elif line_count <14:
+            y.append((row[1]))
+            line_count += 1
+        elif line_count < 31:
+            line_count += 1
+        elif line_count < 35:
             y.append(float(row[1]))
+            line_count += 1
+        # elif line_count < 34:
+        #     line_count += 1
+        # elif line_count == 35:
+        #     y.append(float(row[1]))
+        #     line_count += 1
+        else:
             line_count += 1
     return y
 
@@ -75,8 +87,8 @@ def motion_value(plots):
 # if __name__ == '__main__':
 #     while True:
 #
-#         print(force_motion_value(file_to_analizes())[1])
+#         print(data_separate(file_to_analizes()))
 #         # print(motion_value(file_to_analizes()))
 #         # print(force_value(file_to_analizes()))
 #
-#         time.sleep(1)
+#         time.sleep(10)

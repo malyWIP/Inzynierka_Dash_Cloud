@@ -26,8 +26,8 @@ app.config['suppress_callback_exceptions']=True
 app.layout = html.Div([
     get_logo(),
     html.Div([
-        html.Button('Start', id='Start', n_clicks_timestamp='0'),
-        html.Button('Stop', id='Stop', n_clicks_timestamp='0'),
+        html.Button('Start', id='Start', n_clicks='0'),
+        html.Button('Stop', id='Stop', n_clicks='0'),
         html.Div(id='container')
     ]),
     html.Div([

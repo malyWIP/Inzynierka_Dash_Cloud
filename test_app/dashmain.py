@@ -5,7 +5,7 @@ import dash_html_components as html
 import plotly
 import csv
 import os #os module imported here
-from function_add.watchfolder import watch_dog
+# from function_add.watchfolder import watch_dog
 
 # from app_tester import move_to_directory
 from class_add.DataProcessing import DataMove
@@ -98,12 +98,12 @@ def file_to_analizes():
         plots = csv.reader(csv_file, delimiter=';')
     return plots
 
-def plot_refresh(folder_path):
-
-    if watch_dog(folder_path) == True:
-        return False
-    else:
-        return True
+# def plot_refresh(folder_path):
+#
+#     if watch_dog(folder_path) == True:
+#         return False
+#     else:
+#         return True
 
 
 app = dash.Dash(__name__)
@@ -215,12 +215,12 @@ def display(btn1, btn2):
         msg = 'None of the buttons have been clicked yet'
 
 
-@app.callback(Output('watchdog', 'children'))
-def update_div_current_accuracy_value(file_to_analizing):
-
-            y = plot_refresh(r'D:\STUDIA\Inżynierka\testowy')
-            print(y)
-            return y
+# @app.callback(Output('watchdog', 'children'))
+# def update_div_current_accuracy_value(file_to_analizing):
+#
+#             y = plot_refresh(r'D:\STUDIA\Inżynierka\testowy')
+#             print(y)
+#             return y
             #     html.P(
             #         "Current Accuracy:",
             #         style={
@@ -298,5 +298,5 @@ def update_graph_scatter():
 
 #
 # if __name__ == '__main__':
-#     zebra = kupa(True)
+#     zebra = DataMove(True)
 #     app.run_server(debug=True)

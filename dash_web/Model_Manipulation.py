@@ -82,8 +82,8 @@ def file_to_analizes(folder):
     return plots
 
 
-def plot_refresh(folder_path):
-    if watch_dog(folder_path) == True:
-        return False
-    else:
-        return True
+# def plot_refresh(folder_path):
+#     if watch_dog(folder_path) == True:
+#         return False
+#     else:
+#         return True

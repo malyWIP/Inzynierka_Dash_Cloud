@@ -17,7 +17,7 @@ class DataMove:
         # print(files[0])
         k = 0
         try:
-            while self.state and files.__len__() != k:
+            while self.state !=False and files.__len__() != k:
                 # for f in files:
 
                 src = path + files[k]

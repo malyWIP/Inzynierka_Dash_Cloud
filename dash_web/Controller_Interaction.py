@@ -56,8 +56,8 @@ def update_current_file_analizes(file_to_analizing):
 
 
 @app.callback(Output('container', 'children'),
-              [Input('Start', 'n_clicks_timestamp'),
-               Input('Stop', 'n_clicks_timestamp')])
+              [Input('Start', 'n_clicks'),
+               Input('Stop', 'n_clicks')])
 def start_stop_button(btn1, btn2):
     if int(btn1) > int(btn2):
         process_tester.setState(True)
@@ -67,8 +67,8 @@ def start_stop_button(btn1, btn2):
 
     elif int(btn2) > int(btn1):
         msg = 'Button 2 was most recently clicked'
-        process_tester.setState(False)
-
+        process_tester.setState(True)
+        process_tester.move_to_directory(moveto, path, freq)
     else:
         process_tester.setState(False)
         x = 0
