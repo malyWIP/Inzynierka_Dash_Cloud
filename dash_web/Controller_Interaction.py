@@ -4,9 +4,9 @@ from dash_web.Model_Manipulation import*
 from dash_web.View_Layout import*
 from app import process_tester
 from app import reset_data
-from dash.dependencies import Output, Event, Input
-import plotly
-
+from dash.dependencies import Input,Output
+import plotly.graph_objs as go
+import dash_bootstrap_components as dbc
 
 #############################################
 # Interaction Between Components / Controller
@@ -18,6 +18,30 @@ moveto = r'D:\STUDIA\Inżynierka\Dash_App\csv_memory\\'
 freq = 0.5
 
 html.Div(id='run-log-storage', style={'display': 'none'}),
+
+
+@app.callback(dash.dependencies.Output('page-2-content', 'children'),
+              [dash.dependencies.Input('page-2-radios', 'value')])
+def page_2_radios(value):
+    return 'You have selected "{}"'.format(value)
+
+
+# Update the index
+@app.callback(dash.dependencies.Output('page-content', 'children'),
+              [dash.dependencies.Input('url', 'pathname')])
+def display_page(pathname):
+    if pathname == '/page-1':
+        return page_1_layout
+    elif pathname == '/page-2':
+        return page_2_layout
+    else:
+        return index_page
+
+
+@app.callback(dash.dependencies.Output('page-1-content', 'children'),
+              [dash.dependencies.Input('page-1-dropdown', 'value')])
+def page_1_dropdown(value):
+    return 'You have selected "{}"'.format(value)
 
 
 @app.callback(Output('interval-log-update', 'interval'),
@@ -53,7 +77,6 @@ def update_current_file_analizes(file_to_analizing):
                 ),
                 html.Div(y),
             ]
-
 
 
 @app.callback(Output('container', 'children'),
@@ -95,6 +118,55 @@ def update_edge_sharpness(file_to_analizing):
         else:
             z = 'ostre'
     return [
+        html.Div(
+            [
+                dbc.Row(
+                    [
+                        dbc.Col(html.Div("One of three columns",style={'borderWidth': '1px',
+                                        'borderStyle': 'solid',
+                                        'borderColor': '#80b3ff',
+                                        'w3Panel': 'w3Green',
+                                        'backgroundColor': '80b3ff',
+                                        'borderRadius': '5px'})),
+                        dbc.Col(html.Div("One of three columns")),
+                        dbc.Col(html.Div("One of three columns")),
+                    ]
+                ),
+            ]
+        )]
+    #     html.Div([
+    #         # html.P(
+    #         #     "Current Accuracy:",
+    #         #     style={
+    #         #         'display':'inline-block',
+    #         #         'font-weight': 'bold',
+    #         #         'margin-top': '15px',
+    #         #         'margin-bottom': '0px'
+    #         #     }
+    #         # ),
+    #         html.Div(z, className='six colums',style={
+    #                 'display':'inline-block',
+    #                 'font-weight': 'bold',
+    #                 'margin-top': '15px',
+    #                 'margin-bottom': '0px'}),
+    #         html.Div(x, className='six colums',style={
+    #                 'display':'inline-block',
+    #                 'font-weight': 'bold',
+    #                 'margin-top': '15px',
+    #                 'margin-bottom': '0px'})
+    # ],
+    # className='row')]
+
+
+@app.callback(Output('Process_Parameters', 'children'),
+              [Input('interval-log-update', 'n_intervals')])
+def Process_Parameters(file_to_analizing):
+    data=0
+    czas=0
+    if get_latest(moveto) is not None:
+        data = data_separate(file_to_analizes(moveto))[0]
+        czas = data_separate(file_to_analizes(moveto))[1]
+    return [
         html.P(
             "Current Accuracy:",
             style={
@@ -103,13 +175,13 @@ def update_edge_sharpness(file_to_analizing):
                 'margin-bottom': '0px'
             }
         ),
-        html.Div(z),html.Div(x)
+        html.Div(data),html.Div(czas)
     ]
 
 
 @app.callback(Output('live-update-graph-scatter', 'figure'),
-              events=[Event('interval-component', 'interval')])
-def update_graph_scatter():
+              [Input('interval-log-update', 'n_intervals')])
+def update_graph_scatter(elo):
     x = []
     y = []
     plots = file_to_analizes(moveto)
@@ -117,24 +189,24 @@ def update_graph_scatter():
     traces.clear()
     if plots is not None:
         x = force_motion_value(plots)
-        traces.append(plotly.graph_objs.Scatter(
+        traces.append(go.Scatter(
             x=x[0],
             y=x[1],
             name='Scatter {}'.format(1),
-            mode='lines+markers'
+            mode='lines+markers',
+
             ))
+
         # print(traces)
-        return {'data': traces}
+        return {'data': traces, 'layout': go.Layout(xaxis={'title': 'Przemieszczenie [mm]'}, yaxis={'title': 'Siła [N]'},title='Charakterystyka Procesu Wykrawania')}
+
     elif not plots:
-        traces.append(plotly.graph_objs.Scatter(
+        traces.append(go.Scatter(
             x=x,
             y=y,
             name='Scatter {}'.format(1),
             mode='lines+markers'
         ))
-        return {'data': traces}
 
-
-# if __name__ == '__main__':
-#     zebra = kupa(True)
-#     app.run_server(debug=True)
+        return {'data': traces,
+                'layout': go.Layout(xaxis={'title': 'Przemieszczenie [mm]'}, yaxis={'title': 'Siła [N]'}, title='Charakterystyka Procesu Wykrawania')}

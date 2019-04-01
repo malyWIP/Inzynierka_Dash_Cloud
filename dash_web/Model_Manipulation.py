@@ -8,6 +8,46 @@ import sys
 # Data Manipulation / Model
 ###########################
 
+def data_separate(plots):
+    line_count = 0
+    y = []
+    for row in plots:
+        if line_count < 10:
+            line_count += 1
+        elif line_count <13: #Data,czas
+            y.append((row[1]))
+            line_count += 1
+        elif line_count == 15: #numer pomiaru
+            y.append((row[1]))
+            line_count += 1
+        elif line_count == 17: #Nazwa
+            y.append((row[1]))
+            line_count += 1
+        elif line_count < 30:
+            line_count += 1
+        elif line_count < 32: #ostatnia wartosc x,y
+            y.append(float(row[1]))
+            line_count += 1
+        elif line_count == 34: #Peak
+            y.append(float(row[1]))
+            line_count += 1
+        elif line_count == 37:  # Peak
+            y.append(float(row[4]))
+            line_count += 1
+        elif line_count < 223:
+            line_count += 1
+        elif line_count < 225: #Granice pomiaru w dlugosci
+            y.append((row[2]))
+            line_count += 1
+        elif line_count < 270:
+            line_count += 1
+        elif line_count == 270:  #Liczba pomiarow
+            y.append((row[1]))
+            line_count += 1
+        else:
+            line_count += 1
+    return y
+
 
 def edge_sharpness_result(tab):
     s = sum(tab)
