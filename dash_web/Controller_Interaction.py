@@ -109,31 +109,126 @@ def start_stop_button(btn1, btn2, btn3):
 @app.callback(Output('edge-sharpness', 'children'),
               [Input('interval-log-update', 'n_intervals')])
 def update_edge_sharpness(file_to_analizing):
-    z=0
-    x=0
+    data = 0
+    czas = 0
+    num_cyklu=0
+    nazwa=0
+    nr_pom=0
+    max_sil=0
     if get_latest(moveto) is not None:
-        x = edge_sharpness_result(force_motion_value(file_to_analizes(moveto))[1])
-        if x > 2000:
-            z = 'tępe'
-        else:
-            z = 'ostre'
+        data = data_separate(file_to_analizes(moveto))[0]
+        czas = data_separate(file_to_analizes(moveto))[1]
+        num_cyklu = data_separate(file_to_analizes(moveto))[2]
+        nazwa = data_separate(file_to_analizes(moveto))[3]
+        nr_pom = data_separate(file_to_analizes(moveto))[4]
+        max_sil = data_separate(file_to_analizes(moveto))[7]
     return [
         html.Div(
             [
                 dbc.Row(
                     [
-                        dbc.Col(html.Div("One of three columns",style={'borderWidth': '1px',
-                                        'borderStyle': 'solid',
-                                        'borderColor': '#80b3ff',
-                                        'w3Panel': 'w3Green',
-                                        'backgroundColor': '80b3ff',
-                                        'borderRadius': '5px'})),
-                        dbc.Col(html.Div("One of three columns")),
-                        dbc.Col(html.Div("One of three columns")),
-                    ]
-                ),
+                        dbc.Col(html.Div("Data"),width=1,style={'borderWidth': '1px',
+                                                        'borderStyle': 'solid',
+                                                        'borderColor': '#80b3ff',
+                                                        'w3Panel': 'w3Green',
+                                                        'backgroundColor': 'DeepSkyBlue ',
+                                                        'borderRadius': '5px'}),
+                        dbc.Col(html.Div("Godzina"),width=1, style={'borderWidth': '1px',
+                                                        'borderStyle': 'solid',
+                                                        'borderColor': '#80b3ff',
+                                                        'w3Panel': 'w3Green',
+                                                        'backgroundColor': 'DeepSkyBlue ',
+                                                        'borderRadius': '5px'}),
+                        dbc.Col(html.Div("Numer Cyklu", style={'borderWidth': '1px',
+                                                        'borderStyle': 'solid',
+                                                        'borderColor': '#80b3ff',
+                                                        'w3Panel': 'w3Green',
+                                                        'backgroundColor': 'DeepSkyBlue ',
+                                                        'borderRadius': '5px'})),
+                        dbc.Col(html.Div("Nazwa Pliku", style={'borderWidth': '1px',
+                                                        'borderStyle': 'solid',
+                                                        'borderColor': '#80b3ff',
+                                                        'w3Panel': 'w3Green',
+                                                        'backgroundColor': 'DeepSkyBlue ',
+                                                        'borderRadius': '5px'})),
+                        dbc.Col(html.Div("Numer Pomiaru", style={'borderWidth': '1px',
+                                                        'borderStyle': 'solid',
+                                                        'borderColor': '#80b3ff',
+                                                        'w3Panel': 'w3Green',
+                                                        'backgroundColor': 'DeepSkyBlue ',
+                                                        'borderRadius': '5px'})),
+                        dbc.Col(html.Div("Max Siła Wykrawania", style={'borderWidth': '1px',
+                                                        'borderStyle': 'solid',
+                                                        'borderColor': '#80b3ff',
+                                                        'w3Panel': 'w3Green',
+                                                        'backgroundColor': 'DeepSkyBlue ',
+                                                        'borderRadius': '5px'})),
+                        dbc.Col(html.Div("Min przemieszczenie czujnika", style={'borderWidth': '1px',
+                                                        'borderStyle': 'solid',
+                                                        'borderColor': '#80b3ff',
+                                                        'w3Panel': 'w3Green',
+                                                        'backgroundColor': 'DeepSkyBlue ',
+                                                        'borderRadius': '5px'})),
+                        dbc.Col(html.Div("Max wychylenie czujnika", style={'borderWidth': '1px',
+                                                        'borderStyle': 'solid',
+                                                        'borderColor': '#80b3ff',
+                                                        'w3Panel': 'w3Green',
+                                                        'backgroundColor': 'DeepSkyBlue ',
+                                                        'borderRadius': '5px'})),
+                    ]),
+                dbc.Row(
+                    [
+                        dbc.Col(html.Div(data),width=1, style={'borderWidth': '1px',
+                                                        'borderStyle': 'solid',
+                                                        'borderColor': '#80b3ff',
+                                                        'w3Panel': 'w3Green',
+                                                        'backgroundColor': 'DeepSkyBlue ',
+                                                        'borderRadius': '5px'}),
+                        dbc.Col(html.Div(czas),width=1, style={'borderWidth': '1px',
+                                                           'borderStyle': 'solid',
+                                                           'borderColor': '#80b3ff',
+                                                           'w3Panel': 'w3Green',
+                                                           'backgroundColor': 'DeepSkyBlue ',
+                                                           'borderRadius': '5px'}),
+                        dbc.Col(html.Div(num_cyklu, style={'borderWidth': '1px',
+                                                               'borderStyle': 'solid',
+                                                               'borderColor': '#80b3ff',
+                                                               'w3Panel': 'w3Green',
+                                                               'backgroundColor': 'DeepSkyBlue ',
+                                                               'borderRadius': '5px'})),
+                        dbc.Col(html.Div(nazwa, style={'borderWidth': '1px',
+                                                               'borderStyle': 'solid',
+                                                               'borderColor': '#80b3ff',
+                                                               'w3Panel': 'w3Green',
+                                                               'backgroundColor': 'DeepSkyBlue ',
+                                                               'borderRadius': '5px'})),
+                        dbc.Col(html.Div(nr_pom, style={'borderWidth': '1px',
+                                                                 'borderStyle': 'solid',
+                                                                 'borderColor': '#80b3ff',
+                                                                 'w3Panel': 'w3Green',
+                                                                 'backgroundColor': 'DeepSkyBlue ',
+                                                                 'borderRadius': '5px'})),
+                        dbc.Col(html.Div(max_sil, style={'borderWidth': '1px',
+                                                                                      'borderStyle': 'solid',
+                                                                                      'borderColor': '#80b3ff',
+                                                                                      'w3Panel': 'w3Green',
+                                                                                      'backgroundColor': 'DeepSkyBlue ',
+                                                                                      'borderRadius': '5px'})),
+                        dbc.Col(html.Div("Min Wychylenie czujnika", style={'borderWidth': '1px',
+                                                                           'borderStyle': 'solid',
+                                                                           'borderColor': '#80b3ff',
+                                                                           'w3Panel': 'w3Green',
+                                                                           'backgroundColor': 'DeepSkyBlue ',
+                                                                           'borderRadius': '5px'})),
+                        dbc.Col(html.Div("Max wychylenie czujnika", style={'borderWidth': '1px',
+                                                                           'borderStyle': 'solid',
+                                                                           'borderColor': '#80b3ff',
+                                                                           'w3Panel': 'w3Green',
+                                                                           'backgroundColor': 'DeepSkyBlue ',
+                                                                           'borderRadius': '5px'})),
+                    ]),
+                ]),
             ]
-        )]
     #     html.Div([
     #         # html.P(
     #         #     "Current Accuracy:",
