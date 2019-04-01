@@ -101,10 +101,6 @@ page_1_layout = html.Div([
         html.Div(id='container')
     ]),
     html.Div([
-        html.H1("System nadzorowania pracy gniazda produkcyjnego Industry 4.0"),
-
-        html.Div(id='result'),
-        html.Div(id='edge-sharpness'),
         html.Div(id='Process_Parameters'),
         dcc.Graph(id='live-update-graph-scatter', animate=False,  ),
         # dcc.Graph(id='live-update-graph-bar'),
@@ -124,7 +120,7 @@ page_1_layout = html.Div([
                     {'label': 'Regular Updates', 'value': 'regular'},
                     {'label': 'Fast Updates', 'value': 'fast'}
                 ],
-                value='regular',
+                value='fast',
                 className='ten columns',
                 clearable=False,
                 searchable=False
@@ -147,12 +143,35 @@ page_1_layout = html.Div([
 ])
 
 page_2_layout = html.Div([
+    html.Div(id='result'),
+    html.Div(id='edge-sharpness'),
     html.H1('Analiza procesu wykrawania '),
     dcc.RadioItems(
         id='page-2-radios',
         options=[{'label': i, 'value': i} for i in ['Orange', 'Blue', 'Red']],
         value='Orange'
     ),
+    html.Div([
+        html.Div([
+            dcc.Dropdown(
+                id='dropdown-interval-control',
+                options=[
+                    {'label': 'No Updates', 'value': 'no'},
+                    {'label': 'Slow Updates', 'value': 'slow'},
+                    {'label': 'Regular Updates', 'value': 'regular'},
+                    {'label': 'Fast Updates', 'value': 'fast'}
+                ],
+                value='fast',
+                className='ten columns',
+                clearable=False,
+                searchable=False
+            ),
+        ]),
+        dcc.Interval(
+            id="interval-log-update",
+            n_intervals=0
+        ),
+    ]),
     html.Div(id='page-2-content'),
     html.Br(),
     html.Div(
