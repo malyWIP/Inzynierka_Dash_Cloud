@@ -9,7 +9,7 @@ import dash_bootstrap_components as dbc
 
 
 def get_logo_dash():
-    image = r'D:\STUDIA\Inżynierka\Dash_App\images\dash-logo-stripe.png'
+    image = r'images\dash-logo-stripe.png'
     encoded_image = base64.b64encode(open(image, "rb").read())
     logo = html.Div(
         html.Img(
@@ -21,7 +21,7 @@ def get_logo_dash():
     return logo
 
 def get_logo_dash_WIP():
-    image = r'D:\STUDIA\Inżynierka\Dash_App\images\WIP_Znak.png'
+    image = r'images\WIP_Znak.png'
     encoded_image = base64.b64encode(open(image, "rb").read())
     logo = html.Div(
         html.Img(
@@ -34,7 +34,7 @@ def get_logo_dash_WIP():
 
 
 def get_logo_dash_industry():
-    image = r'D:\STUDIA\Inżynierka\Dash_App\images\industry_4.0.png'
+    image = r'images\industry_4.0.png'
     encoded_image = base64.b64encode(open(image, "rb").read())
     logo = html.Div(
         html.Img(
@@ -48,7 +48,7 @@ def get_logo_dash_industry():
 
 
 def get_logo_dash_press():
-    image = r'D:\STUDIA\Inżynierka\Dash_App\images\power_press.png'
+    image = r'images\power_press.png'
     encoded_image = base64.b64encode(open(image, "rb").read())
     logo = html.Div(
         html.Img(
@@ -92,8 +92,8 @@ index_page = html.Div([
 
 page_1_layout = html.Div([
     html.Div(
-        html.H1('Proces Wykrawania : Parametry'),
-        style={'color': '#000066', 'textAlign': 'center'}),
+        html.H1('Proces Wykrawania : Parametry',style={'color': '#000066', 'textAlign': 'center', 'size': 200}
+        )),
     html.Div([
         html.Button('Start', id='Start', n_clicks='0'),
         html.Button('Stop', id='Stop', n_clicks='0'),
@@ -102,13 +102,13 @@ page_1_layout = html.Div([
     ]),
     html.Div([
         html.Div(id='Process_Parameters'),
-        dcc.Graph(id='live-update-graph-scatter', animate=False,  ),
-        # dcc.Graph(id='live-update-graph-bar'),
-        dcc.Interval(
-            id='interval-component',
-            interval=200,
-            disabled=False
-        )
+        html.Br(),
+        html.Div(
+            html.H1('Wyniki Analizy pracy ostrza w poszczególnych strefach' ,style={'color': '#000066', 'textAlign': 'center', 'size': 100}),
+           ),
+        html.Div(id='edge-sharpness'),
+        html.Br(),
+        dcc.Graph(id='live-update-graph-scatter', animate=False,  )
     ]),
     html.Div([
         html.Div([
@@ -143,14 +143,14 @@ page_1_layout = html.Div([
 ])
 
 page_2_layout = html.Div([
-    html.Div(id='result'),
-    html.Div(id='edge-sharpness'),
+    # html.Div(id='result'),
+    # html.Div(id='edge-sharpness'),
     html.H1('Analiza procesu wykrawania '),
-    dcc.RadioItems(
-        id='page-2-radios',
-        options=[{'label': i, 'value': i} for i in ['Orange', 'Blue', 'Red']],
-        value='Orange'
-    ),
+    html.Div([
+        dcc.Graph(id='live-update-graph-scatter1', animate=False,  ),
+        dcc.Graph(id='live-update-graph-scatter2', animate=False,  ),
+        dcc.Graph(id='live-update-graph-scatter3', animate=False,  )
+    ]),
     html.Div([
         html.Div([
             dcc.Dropdown(

@@ -23,7 +23,9 @@ class DataDel:
                 time.sleep(0.01)
 
         except FileNotFoundError:
-            print('blad')
+            print('Plik nieznaleziony')
+        except PermissionError:
+            print('Plik nie istnieje')
 
 
 

@@ -1,5 +1,5 @@
 import dash
-from dash.dependencies import Output, Event, Input
+from dash.dependencies import Output, Input
 import dash_core_components as dcc
 import dash_html_components as html
 import plotly
@@ -48,28 +48,28 @@ def force_motion_value(plots):
     return x, y
 
 
-def motion_value(plots):
-    line_count = 0
-    y = []
-    for row in plots:
-        if line_count < 280:
-            line_count += 1
-        else:
-            y.append(float(row[2]))
-            line_count += 1
-    return y
+# def motion_value(plots):
+#     line_count = 0
+#     y = []
+#     for row in plots:
+#         if line_count < 280:
+#             line_count += 1
+#         else:
+#             y.append(float(row[2]))
+#             line_count += 1
+#     return y
 
 
-def force_value(plots):
-    line_count = 0
-    y = []
-    for row in plots:
-        if line_count < 280:
-            line_count += 1
-        else:
-            y.append(float(row[1]))
-            line_count += 1
-    return y
+# def force_value(plots):
+#     line_count = 0
+#     y = []
+#     for row in plots:
+#         if line_count < 280:
+#             line_count += 1
+#         else:
+#             y.append(float(row[1]))
+#             line_count += 1
+#     return y
 
 
 def get_latest(folder):
@@ -178,41 +178,41 @@ def update_interval_log_update(interval_rate):
         return 24 * 60 * 60 * 1000
 
 
-@app.callback(Output('result', 'children'),
-              [Input('interval-log-update', 'n_intervals')])
-def update_div_current_accuracy_value(file_to_analizing):
+# @app.callback(Output('result', 'children'),
+#               [Input('interval-log-update', 'n_intervals')])
+# def update_div_current_accuracy_value(file_to_analizing):
+#
+#             y = get_latest(r'D:\STUDIA\Inżynierka\testowy')
+#             return [
+#                 html.P(
+#                     "Analizowany Plik",
+#                     style={
+#                         'font-weight': 'bold',
+#                         'margin-top': '15px',
+#                         'margin-bottom': '0px'
+#                     }
+#                 ),
+#                 html.Div(y),
+#             ]
 
-            y = get_latest(r'D:\STUDIA\Inżynierka\testowy')
-            return [
-                html.P(
-                    "Analizowany Plik",
-                    style={
-                        'font-weight': 'bold',
-                        'margin-top': '15px',
-                        'margin-bottom': '0px'
-                    }
-                ),
-                html.Div(y),
-            ]
-
-@app.callback(Output('container', 'children'),
-              [Input('Start', 'n_clicks_timestamp'),
-               Input('Stop', 'n_clicks_timestamp')])
-def display(btn1, btn2):
-    if int(btn1) > int(btn2):
-        zebra.setState(True)
-        zebra.move_to_directory(path, moveto, freq)
-
-        msg = 'Button 1 was most recently clicked'
-
-    elif int(btn2) > int(btn1):
-        msg = 'Button 2 was most recently clicked'
-        zebra.setState(False)
-
-    else:
-        zebra.setState(False)
-        x = 0
-        msg = 'None of the buttons have been clicked yet'
+# @app.callback(Output('container', 'children'),
+#               [Input('Start', 'n_clicks_timestamp'),
+#                Input('Stop', 'n_clicks_timestamp')])
+# def display(btn1, btn2):
+#     if int(btn1) > int(btn2):
+#         zebra.setState(True)
+#         zebra.move_to_directory(path, moveto, freq)
+#
+#         msg = 'Button 1 was most recently clicked'
+#
+#     elif int(btn2) > int(btn1):
+#         msg = 'Button 2 was most recently clicked'
+#         zebra.setState(False)
+#
+#     else:
+#         zebra.setState(False)
+#         x = 0
+#         msg = 'None of the buttons have been clicked yet'
 
 
 # @app.callback(Output('watchdog', 'children'))
@@ -234,8 +234,8 @@ def display(btn1, btn2):
 
 
 @app.callback(Output('live-update-graph-scatter', 'figure'),
-              events=[Event('interval-component', 'interval')])
-def update_graph_scatter():
+              [Input('interval-log-update', 'n_intervals')])
+def update_graph_scatter(elo):
     x = []
     y = []
     line_count = 0
@@ -298,5 +298,5 @@ def update_graph_scatter():
 
 #
 # if __name__ == '__main__':
-#     zebra = DataMove(True)
+#     # zebra = DataMove(True)
 #     app.run_server(debug=True)
