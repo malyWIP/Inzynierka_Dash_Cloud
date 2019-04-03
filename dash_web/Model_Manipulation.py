@@ -140,7 +140,6 @@ def force_motion_value(plots):
 def Pomiar_sil(plots):
     max_force = float(data_separate(file_to_analizes())[8])
     max_force1=max_force*0.99
-    dzielnik = max_force1/100
     line_count = 0
     row_count = 0
     stage1=0
@@ -159,24 +158,26 @@ def Pomiar_sil(plots):
                 if z < max_force1:
                     z = round(float(row[2]),4)
                     y.append(z)
-                    x.append(float(row[1]))
+
                     line_count += 1
                     row_count += 1
                     stage1 += 1
+                    x.append(float(stage1))
                     # x.append(float(stage1))
                 else:
                     peak=1
         elif row.__len__() > 2 and row[3] != '' and peak == 1 :
             g = round(float(row[2]), 4)
             y1.append(g)
-            x1.append(float(row[1]))
             line_count += 1
             row_count += 1
             stage2 += 1
+            x1.append(float(stage2))
             # x1.append(float(stage2))
-    return x,y,x1,y1,dzielnik
+    return x,y,x1,y1,max_force
 
 def Delta_Force_Stage_1():
+
     strefa_1 = []
     strefa_2 = []
     strefa_11 = []
@@ -185,20 +186,26 @@ def Delta_Force_Stage_1():
     stage2=0
     change = 0
     przedzial = Pomiar_sil(file_to_analizes())[1]
-    dzielnik = Pomiar_sil(file_to_analizes())[4]
+    dzielnik = float(Pomiar_sil(file_to_analizes())[4])
+    start_1 = float(data_separate(file_to_analizes())[11])
+    zakres_I=start_1*0.15
+    wychylenia = (dzielnik/(start_1*0.35))
+    print(dzielnik)
+    print(start_1)
+    print(wychylenia)
     ostrze_I=0
     try:
         for w in range(len(przedzial)):
             if float(w) > 0:
                 z = float(przedzial[w] - przedzial[w-1])
                 round(z,4)
-                if z < dzielnik and change != 1:
+                if z < wychylenia and change != 1 or z >= wychylenia and stage1<=zakres_I:
                     strefa_1.append(float(round(z,4)))
                     stage1 += 1
                     strefa_11.append(float(stage1))
-                    if z > 0.3*dzielnik:
+                    if abs(z) > 0.3*wychylenia:
                         ostrze_I += 1
-                elif z >= dzielnik and change !=1:
+                elif z >= wychylenia and stage1>=zakres_I and change !=1:
                     change = 1
                 elif change == 1:
                     strefa_2.append(float(round(z,4)))
@@ -216,7 +223,7 @@ def Analiza_Stref():
     if strefa_1 < 5:
         stan = 'ok'
         tlo = ' #00ff55 '
-    elif strefa_1 <10:
+    elif strefa_1 <25:
         stan = 'umiarkowany'
         tlo = ' #ffff00 '
     else:
