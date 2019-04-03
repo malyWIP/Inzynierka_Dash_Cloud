@@ -341,5 +341,5 @@ def update_graph_scatter1(elo):
         ))
         return {'data': traces}
 
-# if __name__ == '__main__':
-#     app.run_server(debug=True)
+if __name__ == '__main__':
+    app.run_server(debug=True)

@@ -16,7 +16,7 @@ import dash_bootstrap_components as dbc
 #ZMIENNE
 # path = r'D:\STUDIA\Inżynierka\test\\'
 # moveto = r'D:\STUDIA\Inżynierka\Dash_App\csv_memory\\'
-freq = 1
+freq = 5
 
 html.Div(id='run-log-storage', style={'display': 'none'}),
 
@@ -49,7 +49,7 @@ def page_1_dropdown(value):
               [Input('dropdown-interval-control', 'value')])
 def update_interval_log_update(interval_rate):
     if interval_rate == 'fast':
-        return 200
+        return 5000
 
     elif interval_rate == 'regular':
         return 1000

@@ -3,6 +3,7 @@ import dash_core_components as dcc
 import dash_html_components as html
 import base64
 import dash_bootstrap_components as dbc
+import flask
 #########################
 # Dashboard Layout / View
 #########################
@@ -61,10 +62,10 @@ def get_logo_dash_press():
     return logo
 #
 external_stylesheets = [dbc.themes.BOOTSTRAP,'https://codepen.io/chriddyp/pen/bWLwgP.css']
-
-app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
+server = flask.Flask(__name__)
+app = dash.Dash(__name__, external_stylesheets=external_stylesheets,server=server)
 app.config['suppress_callback_exceptions']=True
-
+server = app.server
 app.layout = html.Div([
     dcc.Location(id='url', refresh=False),
     html.Div(id='page-content')

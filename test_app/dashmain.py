@@ -5,6 +5,7 @@ import dash_html_components as html
 import plotly
 import csv
 import os #os module imported here
+import flask
 # from function_add.watchfolder import watch_dog
 
 # from app_tester import move_to_directory
@@ -105,8 +106,9 @@ def file_to_analizes():
 #     else:
 #         return True
 
-
-app = dash.Dash(__name__)
+server = flask.Flask(__name__)
+app = dash.Dash(__name__,server=server)
+server=app.server
 app.config['suppress_callback_exceptions']=True
 app.layout = html.Div([
     html.Div([
@@ -299,4 +301,4 @@ def update_graph_scatter(elo):
 #
 # if __name__ == '__main__':
 #     # zebra = DataMove(True)
-#     app.run_server(debug=True)
+#     app.run_server(host = '0.0.0.0',debug=True)
