@@ -2,11 +2,12 @@
 
 from dash_web.Model_Manipulation import*
 from dash_web.View_Layout import*
-from app import process_tester
-from app import reset_data
+from appMain import process_tester
+from appMain import reset_data
 from dash.dependencies import Input,Output
 import plotly.graph_objs as go
 import dash_bootstrap_components as dbc
+
 
 #############################################
 # Interaction Between Components / Controller
@@ -15,7 +16,7 @@ import dash_bootstrap_components as dbc
 #ZMIENNE
 # path = r'D:\STUDIA\Inżynierka\test\\'
 # moveto = r'D:\STUDIA\Inżynierka\Dash_App\csv_memory\\'
-freq = 0.1
+freq = 1
 
 html.Div(id='run-log-storage', style={'display': 'none'}),
 
@@ -293,6 +294,8 @@ def Stan_Ostrza(elo):
 def update_graph_scatter(elo):
     x = []
     y = []
+    # a = test.get_latest(moveto)
+    # b=test.file_to_analizes(moveto,a)
     plots = file_to_analizes()
     traces = list()
     traces.clear()

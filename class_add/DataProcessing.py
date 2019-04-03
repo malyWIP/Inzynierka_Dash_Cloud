@@ -10,18 +10,15 @@ class DataMove:
 
 
     def move_to_directory(self, path, moveto, freq):
-        files = os.listdir(path)
-        files.sort()
-        # files = [os.path.join(path, f) for f in os.listdir(path) if f.endswith('.csv')]
-        # files.sort(key=lambda x: os.path.getmtime(x), reverse=True)
-        # print(files[0])
+        files = [os.path.join(path, f) for f in os.listdir(path) if f.endswith('.csv')]
+        files.sort(key=lambda x: os.path.getmtime(x), reverse=False)
         k = 0
         try:
             while self.state !=False and files.__len__() != k:
-                # for f in files:
-
-                src = path + files[k]
-                dst = moveto + files[k]
+                x = str(files[k])
+                b = x.split('\\')
+                src = path + b[2]
+                dst = moveto + b[2]
                 shutil.move(src, dst)
                 k += 1
                 time.sleep(freq)

@@ -1,15 +1,15 @@
 
 import csv
 import os
-from function_add.watchfolder import*
 
 ###########################
 # Data Manipulation / Model
 ###########################
 
-path = r'D:\STUDIA\Inżynierka\test\\'
-moveto = r'D:\STUDIA\Inżynierka\Dash_App\csv_memory\\'
-
+# path = r'D:\STUDIA\Inżynierka\test\\'
+# moveto = r'D:\STUDIA\Inżynierka\testowy\\'
+path = r'csv_folder\\'
+moveto = r'csv_memory\\'
 
 def get_latest(folder):
     try:
@@ -222,7 +222,7 @@ def Analiza_Stref():
     else:
         stan = 'zły'
         tlo = ' #ff3300 '
-    return stan , tlo
+    return stan,tlo
 
 # def plot_refresh(folder_path):
 #     if watch_dog(folder_path) == True:
