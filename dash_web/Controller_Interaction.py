@@ -4,6 +4,7 @@ from dash_web.Model_Manipulation import*
 from dash_web.View_Layout import*
 from appMain import process_tester
 from appMain import reset_data
+from appMain import callbacks_vars
 from dash.dependencies import Input,Output
 import plotly.graph_objs as go
 import dash_bootstrap_components as dbc
@@ -16,7 +17,7 @@ import dash_bootstrap_components as dbc
 #ZMIENNE
 # path = r'D:\STUDIA\Inżynierka\test\\'
 # moveto = r'D:\STUDIA\Inżynierka\Dash_App\csv_memory\\'
-freq = 5
+freq = 1
 
 html.Div(id='run-log-storage', style={'display': 'none'}),
 
@@ -35,6 +36,8 @@ def display_page(pathname):
         return page_1_layout
     elif pathname == '/page-2':
         return page_2_layout
+    elif pathname == '/page-3':
+        return page_3_layout
     else:
         return index_page
 
@@ -49,13 +52,13 @@ def page_1_dropdown(value):
               [Input('dropdown-interval-control', 'value')])
 def update_interval_log_update(interval_rate):
     if interval_rate == 'fast':
-        return 5000
-
-    elif interval_rate == 'regular':
         return 1000
 
+    elif interval_rate == 'regular':
+        return 5000
+
     elif interval_rate == 'slow':
-        return 5 * 1000
+        return 10 * 1000
 
     # Refreshes every 24 hours
     elif interval_rate == 'no':
@@ -85,18 +88,29 @@ def update_interval_log_update(interval_rate):
                Input('Stop', 'n_clicks'),
                Input('Reset', 'n_clicks')])
 def start_stop_button(btn1, btn2, btn3):
-    if int(btn1) > int(btn2) and int(btn1) > int(btn3):
+    if btn1 is None:
+        btn1=0
+    if btn2 is None:
+        btn2 = 0
+    if btn3 is None:
+        btn3 = 0
+
+        msg = 'Button 1 was most recently clicked'
+    if btn1 != callbacks_vars.n_clicks[1]:
+        # It was triggered by a click on the button 1
+        callbacks_vars.update_n_clicks(btn1, 1)
         process_tester.setState(True)
         reset_data.setState(False)
         process_tester.move_to_directory(path, moveto, freq)
-        msg = 'Button 1 was most recently clicked'
 
-    elif int(btn2) > int(btn1) and int(btn2) > int(btn3):
-        msg = 'Button 2 was most recently clicked'
+    elif btn2 != callbacks_vars.n_clicks[2]:
+        # It was triggered by a click on the button 1
+        callbacks_vars.update_n_clicks(btn2, 2)
         reset_data.setState(False)
         process_tester.setState(False)
-    elif int(btn3) > int(btn1) and int(btn3) > int(btn2):
-        msg = 'Button 2 was most recently clicked'
+    elif btn3 != callbacks_vars.n_clicks[3]:
+        # It was triggered by a click on the button 1
+        callbacks_vars.update_n_clicks(btn3, 3)
         reset_data.setState(True)
         process_tester.setState(False)
         reset_data.move_to_directory(moveto,path)
@@ -253,6 +267,10 @@ def Stan_Ostrza(elo):
             kolor1 = Analiza_Stref_I()[1]
             stan2 = Analiza_Stref_II()[0]
             kolor2 = Analiza_Stref_II()[1]
+            stan3 = Analiza_Stref_III()[0]
+            kolor3 = Analiza_Stref_III()[1]
+            stan4 = Analiza_Stref_IV()[0]
+            kolor4 = Analiza_Stref_IV()[1]
             return [
                 html.Div(
                     [
@@ -279,11 +297,11 @@ def Stan_Ostrza(elo):
                                 dbc.Col(html.Div(stan2), width=1, style={
                                     'backgroundColor': kolor2,
                                     'borderRadius': '5px'}),
-                                dbc.Col(html.Div('brak'), width=1, style={
-                                    'backgroundColor': '#00FFFF',
+                                dbc.Col(html.Div(stan3), width=1, style={
+                                    'backgroundColor': kolor3,
                                     'borderRadius': '5px'}),
-                                dbc.Col(html.Div('brak'), width=1, style={
-                                    'backgroundColor': '#00FFFF',
+                                dbc.Col(html.Div(stan4), width=1, style={
+                                    'backgroundColor': kolor4,
                                     'borderRadius': '5px'}),
                             ],justify="center",style={'textAlign':'center'})
                     ])]
@@ -343,7 +361,7 @@ def update_graph_scatter(elo):
             mode='lines+markers'
             ))
         return {'data': traces,
-                'layout': go.Layout(xaxis={'title': 'Przemieszczenie [mm]'}, yaxis={'title': 'Siła [N]'},
+                'layout': go.Layout(xaxis={'title': 'nr pomiaru'}, yaxis={'title': 'Siła [N]'},
                                     title='Strefa I i II')}
     elif not plots:
         traces.append(go.Scatter(
@@ -353,7 +371,7 @@ def update_graph_scatter(elo):
             mode='lines+markers'
         ))
         return {'data': traces,
-                'layout': go.Layout(xaxis={'title': 'Przemieszczenie [mm]'}, yaxis={'title': 'Siła [N]'},
+                'layout': go.Layout(xaxis={'title': 'nr pomiaru'}, yaxis={'title': 'Siła [N]'},
                                     title='Strefa I i II')}
 
 
@@ -417,3 +435,94 @@ def update_graph_scatter1(elo):
         return {'data': traces,
                 'layout': go.Layout(xaxis={'title': 'nr Pomiaru'}, yaxis={'title': 'Różnica Siły [N]'},
                                     title='Strefa  II - Proces Wykrawania, ostrze zagłebia sie w materiał')}
+
+@app.callback(Output('live-update-graph-scatter4', 'figure'),
+              [Input('interval-log-update', 'n_intervals')])
+def update_graph_scatter(elo):
+    x = []
+    y = []
+    plots = file_to_analizes()
+    traces = list()
+    traces.clear()
+    if plots is not None:
+        x = Pomiar_sil(plots)
+        traces.append(go.Scatter(
+            x=x[2],
+            y=x[3],
+            name='Scatter {}'.format(1),
+            mode='lines+markers'
+            ))
+        return {'data': traces,
+                'layout': go.Layout(xaxis={'title': 'nr pomiaru'}, yaxis={'title': 'Siła [N]'},
+                                    title='Strefa III i IV')}
+    elif not plots:
+        traces.append(go.Scatter(
+            x=x,
+            y=y,
+            name='Scatter {}'.format(1),
+            mode='lines+markers'
+        ))
+        return {'data': traces,
+                'layout': go.Layout(xaxis={'title': 'nr pomiaru'}, yaxis={'title': 'Siła [N]'},
+                                    title='Strefa III i IV')}
+
+
+@app.callback(Output('live-update-graph-scatter5', 'figure'),
+              [Input('interval-log-update', 'n_intervals')])
+def update_graph_scatter(elo):
+    x = []
+    y = []
+    plots = file_to_analizes()
+    traces = list()
+    traces.clear()
+    if plots is not None:
+        x = Delta_Force_Stage_2()
+        traces.append(go.Scatter(
+            x=x[1],
+            y=x[0],
+            name='Scatter {}'.format(1),
+            mode='lines+markers'
+            ))
+        return {'data': traces,
+                'layout': go.Layout(xaxis={'title': 'nr pomiaru'}, yaxis={'title': 'Siła [N]'},
+                                    title='Strefa III i IV')}
+    elif not plots:
+        traces.append(go.Scatter(
+            x=x,
+            y=y,
+            name='Scatter {}'.format(1),
+            mode='lines+markers'
+        ))
+        return {'data': traces,
+                'layout': go.Layout(xaxis={'title': 'nr pomiaru'}, yaxis={'title': 'Siła [N]'},
+                                    title='Strefa III i IV')}
+
+@app.callback(Output('live-update-graph-scatter6', 'figure'),
+              [Input('interval-log-update', 'n_intervals')])
+def update_graph_scatter(elo):
+    x = []
+    y = []
+    plots = file_to_analizes()
+    traces = list()
+    traces.clear()
+    if plots is not None:
+        x = Delta_Force_Stage_2()
+        traces.append(go.Scatter(
+            x=x[3],
+            y=x[2],
+            name='Scatter {}'.format(1),
+            mode='lines+markers'
+            ))
+        return {'data': traces,
+                'layout': go.Layout(xaxis={'title': 'nr pomiaru'}, yaxis={'title': 'Siła [N]'},
+                                    title='Strefa III i IV')}
+    elif not plots:
+        traces.append(go.Scatter(
+            x=x,
+            y=y,
+            name='Scatter {}'.format(1),
+            mode='lines+markers'
+        ))
+        return {'data': traces,
+                'layout': go.Layout(xaxis={'title': 'nr pomiaru'}, yaxis={'title': 'Siła [N]'},
+                                    title='Strefa III i IV')}

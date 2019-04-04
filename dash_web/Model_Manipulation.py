@@ -216,6 +216,68 @@ def Delta_Force_Stage_1():
         print('brak do przeliczenia liczb')
         return strefa_1,strefa_11,strefa_2,strefa_22,ostrze_I, ostrze_II
 
+
+def Delta_Force_Stage_2():
+
+    strefa_3 = []
+    strefa_4 = []
+    strefa_33 = []
+    strefa_44 = []
+    stage3=0
+    stage4=0
+    change = 0
+    przedzial2 = Pomiar_sil(file_to_analizes())[3]
+    dzielnik = float(Pomiar_sil(file_to_analizes())[4])
+    start_2= float(data_separate(file_to_analizes())[11])
+    zakres_I=start_2*0.05
+    wychylenia4 = (dzielnik/(start_2*0.5))
+    wychylenia3 = (dzielnik / (start_2 * 0.25))
+    # print(dzielnik)
+    # print(start_1)
+    # print(wychylenia1)
+    # print(wychylenia2)
+    print(wychylenia3)
+    ostrze_III=0
+    ostrze_IV=0
+    try:
+        for w in range(len(przedzial2)):
+            if float(w) > 0:
+                z = float(przedzial2[w] - przedzial2[w-1])
+                round(z,4)
+                if z >0 and stage3<=zakres_I or z<0 and change !=1:
+                    strefa_3.append(float(round(z, 4)))
+                    stage3 += 1
+                    strefa_33.append(float(stage3))
+                    if abs(z) > 1.6 * wychylenia3 :
+                        ostrze_III += 1
+                elif z>0 and stage3>=zakres_I and change != 1:
+                    change = 1
+                elif change == 1:
+                    strefa_4.append(float(round(z,4)))
+                    stage4 += 1
+                    strefa_44.append(float(stage4))
+                    if abs(z) > wychylenia4:
+                        ostrze_IV += 1
+                # if z < wychylenia1 and change != 1 or z >= wychylenia1 and stage3<=zakres_I:
+                #     strefa_3.append(float(round(z,4)))
+                #     stage3 += 1
+                #     strefa_33.append(float(stage3))
+                #     if abs(z) > 0.3*wychylenia1:
+                #         ostrze_I += 1
+                # elif z >= wychylenia1 and stage3>=zakres_I and change !=1:
+                #     change = 1
+                # elif change == 1:
+                #     strefa_4.append(float(round(z,4)))
+                #     stage4 += 1
+                #     strefa_44.append(float(stage4))
+                #     if abs(z) > 1.4*wychylenia2 or abs(z) < 0.7*wychylenia2:
+                #         ostrze_II += 1
+        return strefa_3,strefa_33,strefa_4,strefa_44,ostrze_III, ostrze_IV
+    except IndexError:
+        print('brak do przeliczenia liczb')
+        return strefa_3,strefa_33,strefa_4,strefa_44,ostrze_III, ostrze_IV
+
+
 # def edge_sharpness_result():
 #     a =Delta_Force_Stage_1()[2]
 #     s = sum(a)
@@ -245,6 +307,34 @@ def Analiza_Stref_II():
         stan = 'ok'
         tlo = ' #00ff55 '
     elif strefa_2 <25:
+        stan = 'umiarkowany'
+        tlo = ' #ffff00 '
+    else:
+        stan = 'zły'
+        tlo = ' #ff3300 '
+    return stan,tlo
+
+def Analiza_Stref_III():
+
+    strefa_3=Delta_Force_Stage_2()[4]
+    if strefa_3 < 5:
+        stan = 'ok'
+        tlo = ' #00ff55 '
+    elif strefa_3 <25:
+        stan = 'umiarkowany'
+        tlo = ' #ffff00 '
+    else:
+        stan = 'zły'
+        tlo = ' #ff3300 '
+    return stan,tlo
+
+def Analiza_Stref_IV():
+
+    strefa_4=Delta_Force_Stage_2()[5]
+    if strefa_4 <= 5:
+        stan = 'ok'
+        tlo = ' #00ff55 '
+    elif strefa_4 <=10:
         stan = 'umiarkowany'
         tlo = ' #ffff00 '
     else:

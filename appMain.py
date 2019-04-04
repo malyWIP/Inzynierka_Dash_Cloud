@@ -3,8 +3,9 @@
 from class_add.DataProcessing import DataMove
 from dash_web.Controller_Interaction import*
 from class_add.DataDelete import DataDel
+from class_add.ButtonDef import DashCallbackVariables
 
-
+callbacks_vars = DashCallbackVariables()
 process_tester = DataMove(True)
 reset_data = DataDel(True)
 

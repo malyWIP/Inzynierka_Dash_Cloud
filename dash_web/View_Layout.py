@@ -86,8 +86,11 @@ index_page = html.Div([
         dcc.Link('Proces Wykrawania : Parametry', style={'color': '#b30059'}, href='/page-1'),
         style={"marginRight": 100,'textAlign': 'right'}),
     html.Div(
-        dcc.Link('Analiza procesu wykrawania ', style={'textAlign': 'right', 'color': '#b30059'}, href='/page-2'),
-        style={"marginRight": 100,'textAlign': 'right'}
+        dcc.Link('Analiza procesu wykrawania Strefa I oraz II', style={'textAlign': 'right', 'color': '#b30059'}, href='/page-2'),
+        style={"marginRight": 100,'textAlign': 'right'}),
+    html.Div(
+        dcc.Link('Analiza procesu wykrawania Strefa III oraz IV ', style={'textAlign': 'right', 'color': '#b30059'}, href='/page-3'),
+        style={"marginRight": 100, 'textAlign': 'right'}
     )
 ])
 
@@ -96,9 +99,9 @@ page_1_layout = html.Div([
         html.H1('Proces Wykrawania : Parametry',style={'color': '#000066', 'textAlign': 'center', 'size': 200}
         )),
     html.Div([
-        html.Button('Start', id='Start', n_clicks='0'),
-        html.Button('Stop', id='Stop', n_clicks='0'),
-        html.Button('Reset', id='Reset', n_clicks='0'),
+        html.Button('Start', id='Start', type='submit'),
+        html.Button('Stop', id='Stop', type='submit'),
+        html.Button('Reset', id='Reset', type='submit'),
         html.Div(id='container')
     ]),
     html.Div([
@@ -135,12 +138,17 @@ page_1_layout = html.Div([
     html.Div(id='page-1-content'),
     html.Br(),
     html.Div(
-            dcc.Link('Analiza procesu wykrawania', style={'color': '#b30059'}, href='/page-2'),
-            style={"marginRight": 100,"marginTop": 50,'textAlign': 'right'}),
-    html.Div(
             dcc.Link('Strona główna', style={'textAlign': 'right', 'color': '#b30059'}, href='/'),
-            style={"marginRight": 100,'textAlign': 'right'}
-        )
+            style={"marginRight": 100,'textAlign': 'right'}),
+    html.Div(
+            dcc.Link('Analiza procesu wykrawania Strefa I oraz II', style={'color': '#b30059'}, href='/page-2'),
+            style={"marginRight": 100,'textAlign': 'right'}),
+    html.Div(
+        dcc.Link('Analiza procesu wykrawania Strefa III oraz IV ', style={'textAlign': 'right', 'color': '#b30059'},
+                 href='/page-3'),
+        style={"marginRight": 100, 'textAlign': 'right'}
+    )
+
 ])
 
 page_2_layout = html.Div([
@@ -176,10 +184,59 @@ page_2_layout = html.Div([
     html.Div(id='page-2-content'),
     html.Br(),
     html.Div(
+        dcc.Link('Strona główna', style={'textAlign': 'right', 'color': '#b30059'}, href='/'),
+        style={"marginRight": 100, 'textAlign': 'right'}),
+    html.Div(
             dcc.Link('Proces Wykrawania : Parametry', style={'color': '#b30059'}, href='/page-1'),
             style={"marginRight": 100,'textAlign': 'right'}),
     html.Div(
+        dcc.Link('Analiza procesu wykrawania Strefa III oraz IV ', style={'textAlign': 'right', 'color': '#b30059'},
+                 href='/page-3'),
+        style={"marginRight": 100, 'textAlign': 'right'}
+    )
+])
+
+page_3_layout = html.Div([
+    # html.Div(id='result'),
+    # html.Div(id='edge-sharpness'),
+    html.H1('Analiza procesu wykrawania Strefa III oraz IV'),
+    html.Div([
+        dcc.Graph(id='live-update-graph-scatter4', animate=False,  ),
+        dcc.Graph(id='live-update-graph-scatter5', animate=False,  ),
+        dcc.Graph(id='live-update-graph-scatter6', animate=False,  )
+    ]),
+    html.Div([
+        html.Div([
+            dcc.Dropdown(
+                id='dropdown-interval-control',
+                options=[
+                    {'label': 'No Updates', 'value': 'no'},
+                    {'label': 'Slow Updates', 'value': 'slow'},
+                    {'label': 'Regular Updates', 'value': 'regular'},
+                    {'label': 'Fast Updates', 'value': 'fast'}
+                ],
+                value='fast',
+                className='ten columns',
+                clearable=False,
+                searchable=False
+            ),
+        ]),
+        dcc.Interval(
+            id="interval-log-update",
+            n_intervals=0
+        ),
+    ]),
+    html.Div(id='page-3-content'),
+    html.Br(),
+    html.Div(
             dcc.Link('Strona główna', style={'textAlign': 'right', 'color': '#b30059'}, href='/'),
-            style={"marginRight": 100,'textAlign': 'right'}
-        )
+            style={"marginRight": 100,'textAlign': 'right'}),
+    html.Div(
+            dcc.Link('Proces Wykrawania : Parametry', style={'color': '#b30059'}, href='/page-1'),
+            style={"marginRight": 100,'textAlign': 'right'}),
+    html.Div(
+        dcc.Link('Analiza procesu wykrawania Strefa I oraz II', style={'textAlign': 'right', 'color': '#b30059'},
+                 href='/page-2'),
+        style={"marginRight": 100, 'textAlign': 'right'}),
+
 ])

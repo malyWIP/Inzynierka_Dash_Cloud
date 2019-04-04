@@ -4,7 +4,41 @@
     <bookmark url="file://$PROJECT_DIR$/test_app/forcevalue.py" line="72" mnemonic="1" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="24df6a17-1ddd-4e9d-81c8-68c04ae3c199" name="Default Changelist" comment="" />
+    <list default="true" id="24df6a17-1ddd-4e9d-81c8-68c04ae3c199" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/class_add/ButtonDef.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_app/button.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Dash_App.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Dash_App.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/appMain.py" beforeDir="false" afterPath="$PROJECT_DIR$/appMain.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csv_memory/Part_Maxymos 1_MP-001_2017-04-11_14-53-02_Sila_0_5mm_tepy_0084_OK.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/csv_memory/Part_Maxymos 1_MP-001_2017-04-11_14-53-05_Sila_0_5mm_tepy_0087_OK.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/csv_memory/Part_Maxymos 1_MP-001_2017-04-11_14-54-47_Sila_0_5mm_tepy_0111_OK.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/csv_memory/Part_Maxymos 1_MP-001_2017-04-11_14-54-49_Sila_0_5mm_tepy_0113_OK.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/csv_memory/Part_Maxymos_1_MP-001_2017-02-22_16-05-28_Sila_bl_trans150obr_000002_OK.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/csv_memory/Part_Maxymos_1_MP-001_2017-02-22_16-05-30_Sila_bl_trans150obr_000007_OK.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/csv_memory/Part_Maxymos_1_MP-001_2017-02-22_16-05-33_Sila_bl_trans150obr_000012_OK.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/csv_memory/Part_Maxymos_1_MP-001_2017-02-22_16-05-34_Sila_bl_trans150obr_000014_OK.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/csv_memory/Part_Maxymos_1_MP-001_2017-02-22_16-05-37_Sila_bl_trans150obr_000019_OK.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/csv_memory/Part_Maxymos_1_MP-001_2017-02-22_16-05-38_Sila_bl_trans150obr_000020_OK.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/csv_memory/Part_Maxymos_1_MP-001_2017-02-22_16-05-47_Sila_bl_trans150obr_000036_OK.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/csv_memory/Part_Maxymos_1_MP-001_2017-02-22_16-05-55_Sila_bl_trans150obr_000049_OK.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/csv_memory/Part_Maxymos_1_MP-001_2017-02-22_16-06-05_Sila_bl_trans150obr_000067_OK.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/csv_memory/Part_Maxymos_1_MP-001_2017-02-22_16-06-10_Sila_bl_trans150obr_000075_OK.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/csv_memory/Part_Maxymos_1_MP-001_2017-02-22_16-16-47_Sila_bl_trans050obr_000001_OK.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/csv_memory/Part_Maxymos_1_MP-001_2017-02-22_16-17-42_Sila_bl_trans050obr_000031_OK.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/csv_memory/Part_Maxymos_1_MP-001_2017-02-22_16-18-08_Sila_bl_trans050obr_000045_OK.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/csv_memory/Part_Maxymos_1_MP-001_2017-03-14_14-18-36_Sila_bl_trans150obr_tepy_015_OK.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/csv_memory/Part_Maxymos_1_MP-001_2017-03-14_14-22-14_Sila_bl_trans150obr_tepy_022_OK.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/csv_memory/Part_Maxymos_1_MP-001_2017-03-14_14-22-50_Sila_bl_trans150obr_tepy_024_OK.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/csv_memory/Part_Maxymos_1_MP-001_2017-03-14_14-23-02_Sila_bl_trans150obr_tepy_027_NOK.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/csv_memory/Part_Maxymos_1_MP-001_2017-03-14_14-31-25_Sila_bl_trans150obr_tepy_033_OK.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/csv_memory/Part_Maxymos_1_MP-001_2017-03-14_14-33-14_Sila_bl_trans150obr_tepy_034_OK.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/csv_memory/Part_Maxymos_1_MP-001_2017-03-14_14-33-21_Sila_bl_trans150obr_tepy_035_OK.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dash_web/Controller_Interaction.py" beforeDir="false" afterPath="$PROJECT_DIR$/dash_web/Controller_Interaction.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dash_web/Model_Manipulation.py" beforeDir="false" afterPath="$PROJECT_DIR$/dash_web/Model_Manipulation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dash_web/View_Layout.py" beforeDir="false" afterPath="$PROJECT_DIR$/dash_web/View_Layout.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -12,12 +46,12 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/appMain.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" selection-start-line="12" selection-end-line="12" />
+            <state relative-caret-position="187">
+              <caret line="11" selection-start-line="11" selection-end-line="13" />
               <folding>
                 <element signature="e#24#69#0" expanded="true" />
               </folding>
@@ -26,12 +60,57 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/class_add/DataDelete.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="20" column="37" selection-start-line="20" selection-start-column="37" selection-end-line="20" selection-end-column="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dash_web/View_Layout.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-400">
+              <caret line="205" column="48" selection-start-line="205" selection-start-column="48" selection-end-line="205" selection-end-column="48" />
+              <folding>
+                <element signature="e#0#11#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dash_web/Model_Manipulation.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1323">
-              <caret line="218" selection-start-line="218" selection-start-column="2" selection-end-line="223" selection-end-column="14" />
+            <state relative-caret-position="4250">
+              <caret line="250" column="35" selection-start-line="250" selection-start-column="35" selection-end-line="250" selection-end-column="35" />
               <folding>
                 <element signature="e#1#11#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test_app/forcevalue.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="126">
+              <caret line="124" selection-start-line="124" selection-end-line="142" selection-end-column="32" />
+              <folding>
+                <element signature="e#0#10#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test_app/button.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1564">
+              <caret line="92" selection-start-line="92" selection-start-column="2" selection-end-line="93" selection-end-column="32" />
+              <folding>
+                <element signature="e#36#47#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -40,11 +119,20 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/dash_web/Controller_Interaction.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="524">
-              <caret line="285" column="56" selection-start-line="285" selection-start-column="56" selection-end-line="285" selection-end-column="56" />
+            <state relative-caret-position="-8539">
+              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
               <folding>
                 <element signature="e#2#42#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/class_add/ButtonDef.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" column="41" selection-start-line="6" selection-start-column="41" selection-end-line="6" selection-end-column="41" />
             </state>
           </provider>
         </entry>
@@ -87,11 +175,13 @@
         <option value="$PROJECT_DIR$/test_app/app_buton.py" />
         <option value="$PROJECT_DIR$/app.py" />
         <option value="$PROJECT_DIR$/test_app/dashmain.py" />
-        <option value="$PROJECT_DIR$/dash_web/View_Layout.py" />
         <option value="$PROJECT_DIR$/test_app/integer123.py" />
         <option value="$PROJECT_DIR$/test_app/forcevalue.py" />
         <option value="$PROJECT_DIR$/test_app/analiza.py" />
+        <option value="$PROJECT_DIR$/class_add/ButtonDef.py" />
+        <option value="$PROJECT_DIR$/test_app/button.py" />
         <option value="$PROJECT_DIR$/appMain.py" />
+        <option value="$PROJECT_DIR$/dash_web/View_Layout.py" />
         <option value="$PROJECT_DIR$/dash_web/Model_Manipulation.py" />
         <option value="$PROJECT_DIR$/dash_web/Controller_Interaction.py" />
       </list>
@@ -108,6 +198,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -118,19 +209,33 @@
             <path>
               <item name="Dash_App" type="b2602c69:ProjectViewProjectNode" />
               <item name="Dash_App" type="462c0819:PsiDirectoryNode" />
+              <item name="class_add" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Dash_App" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Dash_App" type="462c0819:PsiDirectoryNode" />
               <item name="dash_web" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Dash_App" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Dash_App" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Dash_App" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Dash_App" type="462c0819:PsiDirectoryNode" />
+              <item name="test_app" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="D:/EMAR/Boms-Away-master" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -153,7 +258,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.appMain">
     <configuration name="appMain" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Dash_App" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -175,9 +280,31 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="button" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Dash_App" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test_app" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test_app/button.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Python.appMain" />
+        <item itemvalue="Python.button" />
       </list>
     </recent_temporary>
   </component>
@@ -236,20 +363,20 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.1406744" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.16666667" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="0" weight="0.4301192" />
-      <window_info anchor="bottom" id="Event Log" order="1" sideWeight="0.50052685" side_tool="true" weight="0.3802817" />
+      <window_info anchor="bottom" id="Event Log" order="1" sideWeight="0.5014881" side_tool="true" weight="0.32352942" />
       <window_info anchor="bottom" id="Python Console" order="2" weight="0.32936078" />
       <window_info anchor="bottom" id="Message" order="3" />
       <window_info anchor="bottom" id="Find" order="4" weight="0.32936078" />
       <window_info anchor="bottom" id="Version Control" order="5" weight="0.32936078" />
-      <window_info active="true" anchor="bottom" id="Run" order="6" sideWeight="0.49947312" visible="true" weight="0.2881907" />
-      <window_info anchor="bottom" id="Debug" order="7" weight="0.3997833" />
+      <window_info active="true" anchor="bottom" id="Run" order="6" sideWeight="0.4985119" visible="true" weight="0.32352942" />
+      <window_info anchor="bottom" id="Debug" order="7" weight="0.39869282" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="10" weight="0.32936078" />
@@ -279,43 +406,10 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/panel/__init__.py" />
-    <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/dash_core_components/Link.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="8" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/dash_html_components/Div.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="731">
-          <caret line="43" column="8" selection-start-line="43" selection-start-column="8" selection-end-line="43" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/dash_bootstrap_components/themes.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="43" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/dash_bootstrap_components/_components/Row.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="28" column="8" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test_app/.pytest_cache/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/dash_html_components/Div.py" />
+    <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/dash_bootstrap_components/themes.py" />
+    <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/dash_bootstrap_components/_components/Row.py" />
+    <entry file="file://$PROJECT_DIR$/test_app/.pytest_cache/README.md" />
     <entry file="file://$PROJECT_DIR$/images/WIP_Znak.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -344,15 +438,7 @@
     <entry file="file://$APPLICATION_HOME_DIR$/helpers/typeshed/stdlib/3/collections/__init__.pyi">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/pandas_datareader/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#34#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/pandas_datareader/__init__.py" />
     <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/plotly/basedatatypes.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
@@ -374,20 +460,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/_plotly_utils/basevalidators.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="45" selection-start-line="45" selection-end-line="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/dash/_watch.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/_plotly_utils/basevalidators.py" />
+    <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/dash/_watch.py" />
     <entry file="file://$USER_HOME$/Anaconda3/Lib/copy.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -395,13 +469,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/watchdog/observers/api.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="257">
-          <caret line="359" selection-start-line="359" selection-end-line="359" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/watchdog/observers/api.py" />
     <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/werkzeug/local.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
@@ -409,29 +477,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/dash_html_components/H1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="43" column="8" selection-start-line="43" selection-start-column="8" selection-end-line="43" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/dash_html_components/H1.py" />
     <entry file="file://$PROJECT_DIR$/csv_folder/__init__.py" />
     <entry file="file://$PROJECT_DIR$/class_add/GraphGenerator.py" />
-    <entry file="file://$PROJECT_DIR$/class_add/DataProcessing.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="23" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/class_add/DataDelete.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="37" lean-forward="true" selection-start-line="20" selection-start-column="37" selection-end-line="20" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Anaconda3/Lib/genericpath.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="174">
@@ -459,36 +507,10 @@
     <entry file="file://$PROJECT_DIR$/function_add/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/dash/dash.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-6636">
-          <caret line="948" column="8" selection-start-line="948" selection-start-column="8" selection-end-line="948" selection-end-column="8" />
-          <folding>
-            <element signature="e#1001#1299#0" />
-            <element signature="e#1314#1419#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/dash/dependencies.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="326">
-          <caret line="27" column="6" selection-start-line="27" selection-start-column="6" selection-end-line="27" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/dash/dash.py" />
+    <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/dash/dependencies.py" />
     <entry file="file://$PROJECT_DIR$/LICENSE">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dash_web/View_Layout.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1224">
-          <caret line="72" lean-forward="true" selection-start-line="72" selection-end-line="72" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test_app/analiza.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -559,16 +581,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test_app/forcevalue.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="309">
-          <caret line="201" column="12" lean-forward="true" selection-start-line="201" selection-start-column="12" selection-end-line="201" selection-end-column="12" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test_app/filemodify.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="765">
@@ -599,20 +611,71 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/class_add/DataProcessing.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="23" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_app/button.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1564">
+          <caret line="92" selection-start-line="92" selection-start-column="2" selection-end-line="93" selection-end-column="32" />
+          <folding>
+            <element signature="e#36#47#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/class_add/ButtonDef.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="41" selection-start-line="6" selection-start-column="41" selection-end-line="6" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/appMain.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        <state relative-caret-position="187">
+          <caret line="11" selection-start-line="11" selection-end-line="13" />
           <folding>
             <element signature="e#24#69#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/test_app/forcevalue.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="124" selection-start-line="124" selection-end-line="142" selection-end-column="32" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/class_add/DataDelete.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="37" selection-start-line="20" selection-start-column="37" selection-end-line="20" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dash_web/View_Layout.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-400">
+          <caret line="205" column="48" selection-start-line="205" selection-start-column="48" selection-end-line="205" selection-end-column="48" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/dash_web/Model_Manipulation.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1323">
-          <caret line="218" selection-start-line="218" selection-start-column="2" selection-end-line="223" selection-end-column="14" />
+        <state relative-caret-position="4250">
+          <caret line="250" column="35" selection-start-line="250" selection-start-column="35" selection-end-line="250" selection-end-column="35" />
           <folding>
             <element signature="e#1#11#0" expanded="true" />
           </folding>
@@ -621,8 +684,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/dash_web/Controller_Interaction.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="524">
-          <caret line="285" column="56" selection-start-line="285" selection-start-column="56" selection-end-line="285" selection-end-column="56" />
+        <state relative-caret-position="-8539">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
           <folding>
             <element signature="e#2#42#0" expanded="true" />
           </folding>
