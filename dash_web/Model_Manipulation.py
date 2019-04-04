@@ -82,11 +82,6 @@ def data_separate(plots):
     return y
 
 
-def edge_sharpness_result(tab):
-    s = sum(tab)
-    x = len(tab)
-    m = float(s/x)
-    return m
 
 
 def force_motion_value(plots):
@@ -189,35 +184,46 @@ def Delta_Force_Stage_1():
     dzielnik = float(Pomiar_sil(file_to_analizes())[4])
     start_1 = float(data_separate(file_to_analizes())[11])
     zakres_I=start_1*0.15
-    wychylenia = (dzielnik/(start_1*0.35))
-    print(dzielnik)
-    print(start_1)
-    print(wychylenia)
+    wychylenia1 = (dzielnik/(start_1*0.35))
+    wychylenia2 = (dzielnik / (start_1 * 0.25))
+    # print(dzielnik)
+    # print(start_1)
+    # print(wychylenia1)
+    # print(wychylenia2)
     ostrze_I=0
+    ostrze_II=0
     try:
         for w in range(len(przedzial)):
             if float(w) > 0:
                 z = float(przedzial[w] - przedzial[w-1])
                 round(z,4)
-                if z < wychylenia and change != 1 or z >= wychylenia and stage1<=zakres_I:
+                if z < wychylenia1 and change != 1 or z >= wychylenia1 and stage1<=zakres_I:
                     strefa_1.append(float(round(z,4)))
                     stage1 += 1
                     strefa_11.append(float(stage1))
-                    if abs(z) > 0.3*wychylenia:
+                    if abs(z) > 0.3*wychylenia1:
                         ostrze_I += 1
-                elif z >= wychylenia and stage1>=zakres_I and change !=1:
+                elif z >= wychylenia1 and stage1>=zakres_I and change !=1:
                     change = 1
                 elif change == 1:
                     strefa_2.append(float(round(z,4)))
                     stage2 += 1
                     strefa_22.append(float(stage2))
-        return strefa_1,strefa_11,strefa_2,strefa_22,ostrze_I
+                    if abs(z) > 1.4*wychylenia2 or abs(z) < 0.7*wychylenia2:
+                        ostrze_II += 1
+        return strefa_1,strefa_11,strefa_2,strefa_22,ostrze_I, ostrze_II
     except IndexError:
         print('brak do przeliczenia liczb')
-        return strefa_1,strefa_11,strefa_2,strefa_22,ostrze_I
+        return strefa_1,strefa_11,strefa_2,strefa_22,ostrze_I, ostrze_II
 
+# def edge_sharpness_result():
+#     a =Delta_Force_Stage_1()[2]
+#     s = sum(a)
+#     x = len(a)
+#     m = float(s/x)
+#     return m
 
-def Analiza_Stref():
+def Analiza_Stref_I():
 
     strefa_1=Delta_Force_Stage_1()[4]
     if strefa_1 < 5:
@@ -230,6 +236,25 @@ def Analiza_Stref():
         stan = 'zły'
         tlo = ' #ff3300 '
     return stan,tlo
+
+
+def Analiza_Stref_II():
+
+    strefa_2=Delta_Force_Stage_1()[5]
+    if strefa_2 < 5:
+        stan = 'ok'
+        tlo = ' #00ff55 '
+    elif strefa_2 <25:
+        stan = 'umiarkowany'
+        tlo = ' #ffff00 '
+    else:
+        stan = 'zły'
+        tlo = ' #ff3300 '
+    return stan,tlo
+
+
+
+
 
 # def plot_refresh(folder_path):
 #     if watch_dog(folder_path) == True:

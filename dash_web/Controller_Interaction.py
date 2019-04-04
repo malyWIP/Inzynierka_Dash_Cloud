@@ -249,8 +249,10 @@ def update_edge_sharpness(file_to_analizing):
 def Stan_Ostrza(elo):
     try:
         if get_latest(moveto) is not None:
-            stan=Analiza_Stref()[0]
-            kolor = Analiza_Stref()[1]
+            stan1=Analiza_Stref_I()[0]
+            kolor1 = Analiza_Stref_I()[1]
+            stan2 = Analiza_Stref_II()[0]
+            kolor2 = Analiza_Stref_II()[1]
             return [
                 html.Div(
                     [
@@ -271,17 +273,17 @@ def Stan_Ostrza(elo):
                             ],justify="center",style={'textAlign':'center'}),
                         dbc.Row(
                             [
-                                dbc.Col(html.Div(stan), width=1, style={
-                                    'backgroundColor': kolor,
+                                dbc.Col(html.Div(stan1), width=1, style={
+                                    'backgroundColor': kolor1,
                                     'borderRadius': '5px'}),
-                                dbc.Col(html.Div(stan), width=1, style={
-                                    'backgroundColor': kolor,
+                                dbc.Col(html.Div(stan2), width=1, style={
+                                    'backgroundColor': kolor2,
                                     'borderRadius': '5px'}),
-                                dbc.Col(html.Div(stan), width=1, style={
-                                    'backgroundColor': kolor,
+                                dbc.Col(html.Div('brak'), width=1, style={
+                                    'backgroundColor': '#00FFFF',
                                     'borderRadius': '5px'}),
-                                dbc.Col(html.Div(stan), width=1, style={
-                                    'backgroundColor': kolor,
+                                dbc.Col(html.Div('brak'), width=1, style={
+                                    'backgroundColor': '#00FFFF',
                                     'borderRadius': '5px'}),
                             ],justify="center",style={'textAlign':'center'})
                     ])]
