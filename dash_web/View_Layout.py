@@ -71,12 +71,12 @@ app.layout = html.Div([
     html.Div(id='page-content')
 ])
 
-
+# style={'fontSize': '16'} dziala w headerach
 index_page = html.Div([
     get_logo_dash(),
     get_logo_dash_WIP(),
     html.Br(),
-    html.Div(html.H2('Instytut Technik Wytwarzania'),style={"marginTop": 250, 'textAlign': 'center', 'color': '#000066', 'size': 200}),
+    html.Div(html.H2('Instytut Technik Wytwarzania'),style={"marginTop": 150, 'textAlign': 'center', 'color': '#000066'}),
     html.Div(
         html.H1('System nadzorowania pracy gniazda produkcyjnego'),
         style={"marginTop": 50, 'textAlign': 'center', 'color': '#000066', 'size': 200},
@@ -112,6 +112,7 @@ page_1_layout = html.Div([
            ),
         html.Div(id='edge-sharpness'),
         html.Br(),
+        html.Div(id='edge-sharpness-final'),
         dcc.Graph(id='live-update-graph-scatter', animate=False,  )
     ]),
     html.Div([

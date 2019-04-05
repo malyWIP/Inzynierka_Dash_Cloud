@@ -4,6 +4,7 @@ from class_add.DataProcessing import DataMove
 from dash_web.Controller_Interaction import*
 from class_add.DataDelete import DataDel
 from class_add.ButtonDef import DashCallbackVariables
+# from Rpi_functions.Gpio_Activities import Przezbrojenie
 
 callbacks_vars = DashCallbackVariables()
 process_tester = DataMove(True)
@@ -11,3 +12,4 @@ reset_data = DataDel(True)
 
 if __name__ == '__main__':
     app.run_server(host='0.0.0.0',debug=True)
+    # Przezbrojenie()

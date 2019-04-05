@@ -1,7 +1,6 @@
 
 import csv
 import os
-
 ###########################
 # Data Manipulation / Model
 ###########################
@@ -236,7 +235,7 @@ def Delta_Force_Stage_2():
     # print(start_1)
     # print(wychylenia1)
     # print(wychylenia2)
-    print(wychylenia3)
+    # print(wychylenia3)
     ostrze_III=0
     ostrze_IV=0
     try:
@@ -244,11 +243,11 @@ def Delta_Force_Stage_2():
             if float(w) > 0:
                 z = float(przedzial2[w] - przedzial2[w-1])
                 round(z,4)
-                if z >0 and stage3<=zakres_I or z<0 and change !=1:
+                if z >0 and stage3<=zakres_I or z<5 and change !=1:
                     strefa_3.append(float(round(z, 4)))
                     stage3 += 1
                     strefa_33.append(float(stage3))
-                    if abs(z) > 1.6 * wychylenia3 :
+                    if abs(z) > 2 * wychylenia3 :
                         ostrze_III += 1
                 elif z>0 and stage3>=zakres_I and change != 1:
                     change = 1
@@ -258,20 +257,6 @@ def Delta_Force_Stage_2():
                     strefa_44.append(float(stage4))
                     if abs(z) > wychylenia4:
                         ostrze_IV += 1
-                # if z < wychylenia1 and change != 1 or z >= wychylenia1 and stage3<=zakres_I:
-                #     strefa_3.append(float(round(z,4)))
-                #     stage3 += 1
-                #     strefa_33.append(float(stage3))
-                #     if abs(z) > 0.3*wychylenia1:
-                #         ostrze_I += 1
-                # elif z >= wychylenia1 and stage3>=zakres_I and change !=1:
-                #     change = 1
-                # elif change == 1:
-                #     strefa_4.append(float(round(z,4)))
-                #     stage4 += 1
-                #     strefa_44.append(float(stage4))
-                #     if abs(z) > 1.4*wychylenia2 or abs(z) < 0.7*wychylenia2:
-                #         ostrze_II += 1
         return strefa_3,strefa_33,strefa_4,strefa_44,ostrze_III, ostrze_IV
     except IndexError:
         print('brak do przeliczenia liczb')
@@ -291,13 +276,16 @@ def Analiza_Stref_I():
     if strefa_1 < 5:
         stan = 'ok'
         tlo = ' #00ff55 '
+        waga = 3
     elif strefa_1 <25:
         stan = 'umiarkowany'
         tlo = ' #ffff00 '
+        waga = 2
     else:
         stan = 'zły'
         tlo = ' #ff3300 '
-    return stan,tlo
+        waga = 1
+    return stan,tlo,waga
 
 
 def Analiza_Stref_II():
@@ -306,13 +294,16 @@ def Analiza_Stref_II():
     if strefa_2 < 5:
         stan = 'ok'
         tlo = ' #00ff55 '
+        waga = 3
     elif strefa_2 <25:
         stan = 'umiarkowany'
         tlo = ' #ffff00 '
+        waga = 2
     else:
         stan = 'zły'
         tlo = ' #ff3300 '
-    return stan,tlo
+        waga = 1
+    return stan,tlo,waga,waga
 
 def Analiza_Stref_III():
 
@@ -320,13 +311,16 @@ def Analiza_Stref_III():
     if strefa_3 < 5:
         stan = 'ok'
         tlo = ' #00ff55 '
-    elif strefa_3 <25:
+        waga = 3
+    elif strefa_3 <15:
         stan = 'umiarkowany'
         tlo = ' #ffff00 '
+        waga = 2
     else:
         stan = 'zły'
         tlo = ' #ff3300 '
-    return stan,tlo
+        waga = 1
+    return stan,tlo,waga
 
 def Analiza_Stref_IV():
 
@@ -334,17 +328,42 @@ def Analiza_Stref_IV():
     if strefa_4 <= 5:
         stan = 'ok'
         tlo = ' #00ff55 '
+        waga = 3
     elif strefa_4 <=10:
         stan = 'umiarkowany'
         tlo = ' #ffff00 '
+        waga = 2
     else:
         stan = 'zły'
         tlo = ' #ff3300 '
-    return stan,tlo
+        waga = 1
+
+    return stan,tlo,waga
 
 
-
-
+def Stan_Koncowy_Ostrza():
+    p1 = Analiza_Stref_I()[2]
+    p2 = Analiza_Stref_II()[2]
+    p3 = Analiza_Stref_III()[2]
+    p4 = Analiza_Stref_IV()[2]
+    suma = p1 + p2 + p3 + p4
+    if suma > 10:
+        stan = 'bardzo dobry'
+        tlo = ' #00ff55 '
+        przezbrojenie = False
+    elif suma > 8:
+        stan = 'dobry'
+        tlo = '#00cc00 '
+        przezbrojenie = False
+    elif suma > 6:
+        stan = 'wymaga przezbrojenia'
+        tlo = ' #ff9933 '
+        przezbrojenie = True
+    else:
+        stan = 'Awaria!!!'
+        tlo = ' #ff3300 '
+        przezbrojenie = True
+    return stan,tlo,przezbrojenie
 
 # def plot_refresh(folder_path):
 #     if watch_dog(folder_path) == True:

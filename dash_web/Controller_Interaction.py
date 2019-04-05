@@ -271,6 +271,7 @@ def Stan_Ostrza(elo):
             kolor3 = Analiza_Stref_III()[1]
             stan4 = Analiza_Stref_IV()[0]
             kolor4 = Analiza_Stref_IV()[1]
+
             return [
                 html.Div(
                     [
@@ -278,16 +279,20 @@ def Stan_Ostrza(elo):
                             [
                                 dbc.Col(html.Div('Strefa I'), width=1, style={
                                     'backgroundColor': 'DeepSkyBlue',
-                                    'borderRadius': '5px'}),
+                                    'borderRadius': '5px',
+                                    'font-weight': 'bold'}),
                                 dbc.Col(html.Div("Strefa II"), width=1, style={
                                     'backgroundColor': 'DeepSkyBlue ',
-                                    'borderRadius': '5px'}),
+                                    'borderRadius': '5px',
+                                    'font-weight': 'bold',}),
                                 dbc.Col(html.Div("Strefa III"), width=1, style={
                                     'backgroundColor': 'DeepSkyBlue ',
-                                    'borderRadius': '5px'}),
+                                    'borderRadius': '5px',
+                                    'font-weight': 'bold',}),
                                 dbc.Col(html.Div("Strefa IV"), width=1, style={
                                     'backgroundColor': 'DeepSkyBlue ',
-                                    'borderRadius': '5px'}),
+                                    'borderRadius': '5px',
+                                    'font-weight': 'bold',}),
                             ],justify="center",style={'textAlign':'center'}),
                         dbc.Row(
                             [
@@ -305,6 +310,36 @@ def Stan_Ostrza(elo):
                                     'borderRadius': '5px'}),
                             ],justify="center",style={'textAlign':'center'})
                     ])]
+    except TypeError:
+        print('bład')
+
+
+@app.callback(Output('edge-sharpness-final', 'children'),
+              [Input('interval-log-update', 'n_intervals')])
+def Stan_Ostrza(elo):
+    try:
+        if get_latest(moveto) is not None:
+            stan = Stan_Koncowy_Ostrza()[0]
+            kolor = Stan_Koncowy_Ostrza()[1]
+
+            return [
+                html.Div(
+                    [
+                        dbc.Row(
+                            [
+                                dbc.Col(html.Div('Stan Ostrza'), width=2, style={
+                                    'backgroundColor': 'DeepSkyBlue',
+                                    'borderRadius': '5px',
+                                    'font-weight': 'bold',
+                                    'size': 30}),
+                            ], justify="center", style={'textAlign': 'center'}),
+                        dbc.Row(
+                            [
+                                dbc.Col(html.Div(stan), width=2, style={
+                                    'backgroundColor': kolor,
+                                    'borderRadius': '5px'}),
+                            ], justify="center", style={'textAlign': 'center'})
+                    ],style={'size': 200})]
     except TypeError:
         print('bład')
 
@@ -485,7 +520,7 @@ def update_graph_scatter(elo):
             ))
         return {'data': traces,
                 'layout': go.Layout(xaxis={'title': 'nr pomiaru'}, yaxis={'title': 'Siła [N]'},
-                                    title='Strefa III i IV')}
+                                    title='Strefa III - oderwanie materiału od blachy')}
     elif not plots:
         traces.append(go.Scatter(
             x=x,
@@ -495,7 +530,8 @@ def update_graph_scatter(elo):
         ))
         return {'data': traces,
                 'layout': go.Layout(xaxis={'title': 'nr pomiaru'}, yaxis={'title': 'Siła [N]'},
-                                    title='Strefa III i IV')}
+                                    title='Strefa III oderwanie materiału od blachy')}
+
 
 @app.callback(Output('live-update-graph-scatter6', 'figure'),
               [Input('interval-log-update', 'n_intervals')])
@@ -515,7 +551,7 @@ def update_graph_scatter(elo):
             ))
         return {'data': traces,
                 'layout': go.Layout(xaxis={'title': 'nr pomiaru'}, yaxis={'title': 'Siła [N]'},
-                                    title='Strefa III i IV')}
+                                    title='Strefa IV - wyjście ostrza z materiału')}
     elif not plots:
         traces.append(go.Scatter(
             x=x,
@@ -525,4 +561,4 @@ def update_graph_scatter(elo):
         ))
         return {'data': traces,
                 'layout': go.Layout(xaxis={'title': 'nr pomiaru'}, yaxis={'title': 'Siła [N]'},
-                                    title='Strefa III i IV')}
+                                    title='Strefa IV - wyjście ostrza z materiału')}
