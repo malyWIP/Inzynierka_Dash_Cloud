@@ -5,19 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="24df6a17-1ddd-4e9d-81c8-68c04ae3c199" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Rpi_functions/Gpio_Activities.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Dash_App.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Dash_App.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/class_add/listener.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/appMain.py" beforeDir="false" afterPath="$PROJECT_DIR$/appMain.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/csv_folder/Part_Maxymos 1_MP-001_2017-04-11_14-54-53_Sila_0_5mm_tepy_0119_OK.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/csv_folder/Part_Maxymos 1_MP-001_2017-04-11_14-57-21_Sila_0_5mm_tepy_0165_NOK.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/csv_folder/Part_Maxymos 1_MP-001_2017-04-11_14-58-23_Sila_0_5mm_tepy_0189_OK.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/csv_folder/Part_Maxymos 1_MP-001_2017-04-11_15-00-44_Sila_0_5mm_tepy_0233_OK.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/csv_folder/Part_Maxymos 1_MP-001_2017-04-11_15-00-47_Sila_0_5mm_tepy_0240_OK.csv" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/dash_web/Controller_Interaction.py" beforeDir="false" afterPath="$PROJECT_DIR$/dash_web/Controller_Interaction.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dash_web/Model_Manipulation.py" beforeDir="false" afterPath="$PROJECT_DIR$/dash_web/Model_Manipulation.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dash_web/View_Layout.py" beforeDir="false" afterPath="$PROJECT_DIR$/dash_web/View_Layout.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/function_add/watchfolder.py" beforeDir="false" afterPath="$PROJECT_DIR$/function_add/watchfolder.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -27,11 +21,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/appMain.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="57" />
+            <state relative-caret-position="221">
+              <caret line="13" column="32" selection-start-line="13" selection-start-column="32" selection-end-line="13" selection-end-column="32" />
               <folding>
                 <element signature="e#24#69#0" expanded="true" />
               </folding>
@@ -48,11 +42,23 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/dash_web/Controller_Interaction.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="67" column="57" selection-start-line="67" selection-start-column="44" selection-end-line="67" selection-end-column="57" />
+              <folding>
+                <element signature="e#2#42#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dash_web/View_Layout.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1241">
-              <caret line="73" column="45" selection-start-line="73" selection-start-column="45" selection-end-line="73" selection-end-column="45" />
+            <state relative-caret-position="1207">
+              <caret line="107" column="30" selection-start-line="107" selection-start-column="8" selection-end-line="107" selection-end-column="30" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
@@ -61,10 +67,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/class_add/ButtonDef.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dash_web/Model_Manipulation.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-5735">
-              <caret line="2" column="9" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
+            <state relative-caret-position="679">
+              <caret line="374" column="25" selection-start-line="374" selection-start-column="25" selection-end-line="374" selection-end-column="25" />
               <folding>
                 <element signature="e#1#11#0" expanded="true" />
               </folding>
@@ -73,52 +88,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Rpi_functions/Gpio_Activities.py">
+        <entry file="file://$PROJECT_DIR$/class_add/listener.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-end-line="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/gpiozero/output_devices.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4794">
-              <caret line="282" column="6" selection-start-line="282" selection-start-column="6" selection-end-line="282" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/gpiozero/__init__.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="67" selection-start-column="67" selection-end-column="67" />
-              <folding>
-                <element signature="e#2148#2251#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test_app/forcevalue.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="124" selection-start-line="124" selection-end-line="142" selection-end-column="32" />
-              <folding>
-                <element signature="e#0#10#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dash_web/Controller_Interaction.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5593">
-              <caret line="336" column="29" selection-start-line="336" selection-start-column="29" selection-end-line="336" selection-end-column="29" />
+            <state relative-caret-position="85">
+              <caret line="5" selection-start-line="5" selection-end-line="5" />
             </state>
           </provider>
         </entry>
@@ -146,7 +119,6 @@
         <option value="$PROJECT_DIR$/class/DataProcessing.py" />
         <option value="$PROJECT_DIR$/test_app/image-test.py" />
         <option value="$PROJECT_DIR$/main/app.py" />
-        <option value="$PROJECT_DIR$/function_add/watchfolder.py" />
         <option value="$PROJECT_DIR$/dash_web/dashmain.py" />
         <option value="$PROJECT_DIR$/test_app/Testy_panda.py" />
         <option value="$PROJECT_DIR$/test_app/multipages.py" />
@@ -166,17 +138,20 @@
         <option value="$PROJECT_DIR$/test_app/analiza.py" />
         <option value="$PROJECT_DIR$/class_add/ButtonDef.py" />
         <option value="$PROJECT_DIR$/test_app/button.py" />
-        <option value="$PROJECT_DIR$/dash_web/Controller_Interaction.py" />
-        <option value="$PROJECT_DIR$/dash_web/View_Layout.py" />
-        <option value="$PROJECT_DIR$/dash_web/Model_Manipulation.py" />
         <option value="$PROJECT_DIR$/Rpi_functions/Gpio_Activities.py" />
+        <option value="$PROJECT_DIR$/dash_web/View_Layout.py" />
+        <option value="$PROJECT_DIR$/function_add/watchfolder.py" />
+        <option value="$PROJECT_DIR$/test_app/listener.py" />
         <option value="$PROJECT_DIR$/appMain.py" />
+        <option value="$PROJECT_DIR$/dash_web/Model_Manipulation.py" />
+        <option value="$PROJECT_DIR$/class_add/listener.py" />
+        <option value="$PROJECT_DIR$/dash_web/Controller_Interaction.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="43" />
-    <option name="y" value="110" />
+    <option name="x" value="344" />
+    <option name="y" value="178" />
     <option name="width" value="1552" />
     <option name="height" value="840" />
   </component>
@@ -196,7 +171,17 @@
             <path>
               <item name="Dash_App" type="b2602c69:ProjectViewProjectNode" />
               <item name="Dash_App" type="462c0819:PsiDirectoryNode" />
+              <item name="class_add" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Dash_App" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Dash_App" type="462c0819:PsiDirectoryNode" />
               <item name="dash_web" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Dash_App" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Dash_App" type="462c0819:PsiDirectoryNode" />
+              <item name="function_add" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Dash_App" type="b2602c69:ProjectViewProjectNode" />
@@ -216,11 +201,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\STUDIA\Inżynierka\Dash_App\class_add" />
       <recent name="D:\STUDIA\Inżynierka\Dash_App\csv_folder" />
       <recent name="D:\STUDIA\Inżynierka\Dash_App\test_app" />
       <recent name="D:\STUDIA\Inżynierka\Dash_App" />
       <recent name="D:\STUDIA\Inżynierka\Dash_App\images" />
-      <recent name="D:\STUDIA\Inżynierka\Dash_App\function_add" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -278,9 +263,53 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="listener" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Dash_App" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test_app" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="D:\STUDIA\Inżynierka\Dash_App\class_add\listener.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="watchfolder" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Dash_App" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/function_add" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/function_add/watchfolder.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Python.appMain" />
+        <item itemvalue="Python.listener" />
+        <item itemvalue="Python.watchfolder" />
         <item itemvalue="Python.button" />
       </list>
     </recent_temporary>
@@ -341,10 +370,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.16649105" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.13277134" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="0" weight="0.4301192" />
       <window_info anchor="bottom" id="Event Log" order="1" sideWeight="0.5014881" side_tool="true" weight="0.32352942" />
@@ -383,19 +411,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/test_app/.pytest_cache/README.md" />
-    <entry file="file://$PROJECT_DIR$/images/WIP_Znak.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/images/power_press.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/images/industry_4.0.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/images/dash-logo-stripe.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-48" />
@@ -443,7 +458,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/watchdog/observers/api.py" />
     <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/werkzeug/local.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
@@ -461,28 +475,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/flask/app.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="539">
-          <caret line="1814" selection-start-line="1814" selection-end-line="1814" />
-          <folding>
-            <element signature="e#220#229#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/function_add/watchfolder.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-139">
-          <caret line="33" column="34" selection-start-line="33" selection-start-column="34" selection-end-line="33" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/function_add/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/dash/dash.py" />
-    <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/dash/dependencies.py" />
     <entry file="file://$PROJECT_DIR$/LICENSE">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -585,56 +580,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/class_add/DataProcessing.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="23" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test_app/button.py" />
-    <entry file="file://$PROJECT_DIR$/class_add/ButtonDef.py" />
-    <entry file="file://$PROJECT_DIR$/test_app/forcevalue.py">
+    <entry file="file://$PROJECT_DIR$/Rpi_functions/Gpio_Activities.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="124" selection-start-line="124" selection-end-line="142" selection-end-column="32" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
+        <state>
+          <caret selection-end-line="11" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dash_web/Controller_Interaction.py">
+    <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/gpiozero/output_devices.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5593">
-          <caret line="336" column="29" selection-start-line="336" selection-start-column="29" selection-end-line="336" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/class_add/DataDelete.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="37" selection-start-line="20" selection-start-column="37" selection-end-line="20" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dash_web/View_Layout.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1241">
-          <caret line="73" column="45" selection-start-line="73" selection-start-column="45" selection-end-line="73" selection-end-column="45" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dash_web/Model_Manipulation.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-5735">
-          <caret line="2" column="9" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
-          <folding>
-            <element signature="e#1#11#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="4794">
+          <caret line="282" column="6" selection-start-line="282" selection-start-column="6" selection-end-line="282" selection-end-column="6" />
         </state>
       </provider>
     </entry>
@@ -648,26 +605,149 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/gpiozero/output_devices.py">
+    <entry file="file://$PROJECT_DIR$/test_app/forcevalue.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4794">
-          <caret line="282" column="6" selection-start-line="282" selection-start-column="6" selection-end-line="282" selection-end-column="6" />
+        <state relative-caret-position="2074">
+          <caret line="124" selection-start-line="124" selection-end-line="142" selection-end-column="32" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Rpi_functions/Gpio_Activities.py">
+    <entry file="file://$PROJECT_DIR$/class_add/DataProcessing.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="11" />
+        <state relative-caret-position="391">
+          <caret line="23" column="23" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/werkzeug/serving.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="313">
+          <caret line="269" selection-start-line="269" selection-end-line="269" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/werkzeug/debug/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4378">
+          <caret line="291" selection-start-line="291" selection-end-line="291" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/flask/app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="458">
+          <caret line="2308" selection-start-line="2308" selection-end-line="2308" />
+          <folding>
+            <element signature="e#220#229#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/dash/dash.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="968" selection-start-line="968" selection-end-line="968" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharmCE2018.3/system/python_stubs/16248581/builtins.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="33" lean-forward="true" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/dash/dependencies.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="15" column="18" lean-forward="true" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/watchdog/observers/api.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="149">
+          <caret line="257" column="8" selection-start-line="257" selection-start-column="8" selection-end-line="257" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/watchdog/events.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="302">
+          <caret line="325" column="37" selection-start-line="325" selection-start-column="37" selection-end-line="325" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/function_add/watchfolder.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="441">
+          <caret line="62" column="66" selection-start-line="62" selection-start-column="23" selection-end-line="62" selection-end-column="66" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/class_add/DataDelete.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="37" selection-start-line="20" selection-start-column="37" selection-end-line="20" selection-end-column="37" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/appMain.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="57" />
+        <state relative-caret-position="221">
+          <caret line="13" column="32" selection-start-line="13" selection-start-column="32" selection-end-line="13" selection-end-column="32" />
           <folding>
             <element signature="e#24#69#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/class_add/ButtonDef.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dash_web/View_Layout.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1207">
+          <caret line="107" column="30" selection-start-line="107" selection-start-column="8" selection-end-line="107" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/class_add/listener.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dash_web/Model_Manipulation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="679">
+          <caret line="374" column="25" selection-start-line="374" selection-start-column="25" selection-end-line="374" selection-end-column="25" />
+          <folding>
+            <element signature="e#1#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dash_web/Controller_Interaction.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="67" column="57" selection-start-line="67" selection-start-column="44" selection-end-line="67" selection-end-column="57" />
+          <folding>
+            <element signature="e#2#42#0" expanded="true" />
           </folding>
         </state>
       </provider>

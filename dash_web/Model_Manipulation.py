@@ -9,7 +9,8 @@ import os
 # moveto = r'D:\STUDIA\Inżynierka\testowy\\'
 path = r'csv_folder\\'
 moveto = r'csv_memory\\'
-
+x = 0
+x1 =0
 def get_latest(folder):
     try:
         files = [os.path.join(folder, f) for f in os.listdir(folder) if f.endswith('.csv')]
@@ -20,6 +21,16 @@ def get_latest(folder):
             return files[0]
     except FileNotFoundError:
         print('nie znaleziono pliku')
+
+def File_Change1():
+    global x1
+    folder = r'csv_memory\\'
+    try:
+        x1 = len([os.path.join(folder, f) for f in os.listdir(folder) if f.endswith('.csv')])
+        return x1
+    except FileNotFoundError:
+        print('nie znaleziono pliku')
+        return x1
 
 def file_to_analizes():
     time_sorted_list = None
@@ -243,7 +254,7 @@ def Delta_Force_Stage_2():
             if float(w) > 0:
                 z = float(przedzial2[w] - przedzial2[w-1])
                 round(z,4)
-                if z >0 and stage3<=zakres_I or z<5 and change !=1:
+                if z >0 and stage3<=zakres_I or z<2 and change !=1:
                     strefa_3.append(float(round(z, 4)))
                     stage3 += 1
                     strefa_33.append(float(stage3))
@@ -363,10 +374,13 @@ def Stan_Koncowy_Ostrza():
         stan = 'Awaria!!!'
         tlo = ' #ff3300 '
         przezbrojenie = True
-    return stan,tlo,przezbrojenie
+    return stan,tlo,przezbrojenie,suma
 
-# def plot_refresh(folder_path):
-#     if watch_dog(folder_path) == True:
-#         return False
-#     else:
-#         return True
+def Wskaznik_dobre():
+    global x
+    suma = Stan_Koncowy_Ostrza()[3]
+    # if suma>8:
+    #     print('ok')
+    if suma > 8:
+        x += 1
+    return x

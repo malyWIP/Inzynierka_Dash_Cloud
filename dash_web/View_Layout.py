@@ -105,6 +105,7 @@ page_1_layout = html.Div([
         html.Div(id='container')
     ]),
     html.Div([
+        html.Div(id='result'),
         html.Div(id='Process_Parameters'),
         html.Br(),
         html.Div(
@@ -153,7 +154,7 @@ page_1_layout = html.Div([
 ])
 
 page_2_layout = html.Div([
-    # html.Div(id='result'),
+
     # html.Div(id='edge-sharpness'),
     html.H1('Analiza procesu wykrawania '),
     html.Div([

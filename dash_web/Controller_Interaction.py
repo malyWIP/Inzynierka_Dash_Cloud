@@ -6,10 +6,9 @@ from appMain import process_tester
 from appMain import reset_data
 from appMain import callbacks_vars
 from dash.dependencies import Input,Output
+from appMain import licznik
 import plotly.graph_objs as go
 import dash_bootstrap_components as dbc
-
-
 #############################################
 # Interaction Between Components / Controller
 #############################################
@@ -65,22 +64,31 @@ def update_interval_log_update(interval_rate):
         return 24 * 60 * 60 * 1000
 
 
-# @app.callback(Output('result', 'children'),
-#               [Input('interval-log-update', 'n_intervals')])
-# def update_current_file_analizes(file_to_analizing):
-#
-#             y = get_latest(moveto)
-#             return [
-#                 html.P(
-#                     "Analizowany Plik",
-#                     style={
-#                         'font-weight': 'bold',
-#                         'margin-top': '15px',
-#                         'margin-bottom': '0px'
-#                     }
-#                 ),
-#                 html.Div(y),
-#             ]
+@app.callback(Output('result', 'children'),
+              [Input('interval-log-update', 'n_intervals')])
+def update_current_file_analizes(file_to_analizing):
+
+    try:
+        if get_latest(moveto) is not None:
+            y = Wskaznik_dobre()
+            z = licznik.set_value(File_Change1())
+            # print(licznik.post_change())
+            # z = File_Change1()
+
+            return [
+                html.P(
+                    "Analizowany Plik",
+                    style={
+                        'font-weight': 'bold',
+                        'margin-top': '15px',
+                        'margin-bottom': '0px'
+                    }
+                ),
+                html.Div(z),
+            ]
+    except TypeError:
+        print('bład')
+
 
 
 @app.callback(Output('container', 'children'),
@@ -95,7 +103,7 @@ def start_stop_button(btn1, btn2, btn3):
     if btn3 is None:
         btn3 = 0
 
-        msg = 'Button 1 was most recently clicked'
+        # msg = 'Button 1 was most recently clicked'
     if btn1 != callbacks_vars.n_clicks[1]:
         # It was triggered by a click on the button 1
         callbacks_vars.update_n_clicks(btn1, 1)
