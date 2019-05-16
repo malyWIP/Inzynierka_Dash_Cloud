@@ -6,7 +6,6 @@ from appMain import process_tester
 from appMain import reset_data
 from appMain import callbacks_vars
 from dash.dependencies import Input,Output
-from appMain import licznik
 import plotly.graph_objs as go
 import dash_bootstrap_components as dbc
 #############################################
@@ -16,8 +15,9 @@ import dash_bootstrap_components as dbc
 #ZMIENNE
 # path = r'D:\STUDIA\Inżynierka\test\\'
 # moveto = r'D:\STUDIA\Inżynierka\Dash_App\csv_memory\\'
-freq = 1
-
+freq = 2
+beck = 0
+cykle = 0
 html.Div(id='run-log-storage', style={'display': 'none'}),
 
 
@@ -62,32 +62,6 @@ def update_interval_log_update(interval_rate):
     # Refreshes every 24 hours
     elif interval_rate == 'no':
         return 24 * 60 * 60 * 1000
-
-
-@app.callback(Output('result', 'children'),
-              [Input('interval-log-update', 'n_intervals')])
-def update_current_file_analizes(file_to_analizing):
-
-    try:
-        if get_latest(moveto) is not None:
-            y = Wskaznik_dobre()
-            z = licznik.set_value(File_Change1())
-            # print(licznik.post_change())
-            # z = File_Change1()
-
-            return [
-                html.P(
-                    "Analizowany Plik",
-                    style={
-                        'font-weight': 'bold',
-                        'margin-top': '15px',
-                        'margin-bottom': '0px'
-                    }
-                ),
-                html.Div(z),
-            ]
-    except TypeError:
-        print('bład')
 
 
 

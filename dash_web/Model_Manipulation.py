@@ -11,6 +11,7 @@ path = r'csv_folder\\'
 moveto = r'csv_memory\\'
 x = 0
 x1 =0
+
 def get_latest(folder):
     try:
         files = [os.path.join(folder, f) for f in os.listdir(folder) if f.endswith('.csv')]
@@ -111,33 +112,6 @@ def force_motion_value(plots):
     return x, y
 
 
-# def motion_value(plots):
-#     line_count = 0
-#     y = []
-#     for row in plots:
-#         if line_count < 280:
-#             line_count += 1
-#         else:
-#             if row[1] != '':
-#                 y.append(float(row[2]))
-#                 line_count += 1
-#     return y
-#
-#
-# def force_value(plots):
-#     line_count = 0
-#     y = []
-#     for row in plots:
-#         if line_count < 280:
-#             line_count += 1
-#         else:
-#             if row[1] != '':
-#                 y.append(float(row[1]))
-#                 line_count += 1
-#     return y
-
-
-
 ###########################
 # Data Analysis
 ###########################
@@ -168,7 +142,6 @@ def Pomiar_sil(plots):
                     row_count += 1
                     stage1 += 1
                     x.append(float(stage1))
-                    # x.append(float(stage1))
                 else:
                     peak=1
         elif row.__len__() > 2 and row[3] != '' and peak == 1 :
@@ -178,7 +151,6 @@ def Pomiar_sil(plots):
             row_count += 1
             stage2 += 1
             x1.append(float(stage2))
-            # x1.append(float(stage2))
     return x,y,x1,y1,max_force
 
 def Delta_Force_Stage_1():
@@ -196,10 +168,6 @@ def Delta_Force_Stage_1():
     zakres_I=start_1*0.15
     wychylenia1 = (dzielnik/(start_1*0.35))
     wychylenia2 = (dzielnik / (start_1 * 0.25))
-    # print(dzielnik)
-    # print(start_1)
-    # print(wychylenia1)
-    # print(wychylenia2)
     ostrze_I=0
     ostrze_II=0
     try:
@@ -242,11 +210,6 @@ def Delta_Force_Stage_2():
     zakres_I=start_2*0.05
     wychylenia4 = (dzielnik/(start_2*0.5))
     wychylenia3 = (dzielnik / (start_2 * 0.25))
-    # print(dzielnik)
-    # print(start_1)
-    # print(wychylenia1)
-    # print(wychylenia2)
-    # print(wychylenia3)
     ostrze_III=0
     ostrze_IV=0
     try:
@@ -273,13 +236,6 @@ def Delta_Force_Stage_2():
         print('brak do przeliczenia liczb')
         return strefa_3,strefa_33,strefa_4,strefa_44,ostrze_III, ostrze_IV
 
-
-# def edge_sharpness_result():
-#     a =Delta_Force_Stage_1()[2]
-#     s = sum(a)
-#     x = len(a)
-#     m = float(s/x)
-#     return m
 
 def Analiza_Stref_I():
 
@@ -376,11 +332,3 @@ def Stan_Koncowy_Ostrza():
         przezbrojenie = True
     return stan,tlo,przezbrojenie,suma
 
-def Wskaznik_dobre():
-    global x
-    suma = Stan_Koncowy_Ostrza()[3]
-    # if suma>8:
-    #     print('ok')
-    if suma > 8:
-        x += 1
-    return x

@@ -90,6 +90,10 @@ index_page = html.Div([
         style={"marginRight": 100,'textAlign': 'right'}),
     html.Div(
         dcc.Link('Analiza procesu wykrawania Strefa III oraz IV ', style={'textAlign': 'right', 'color': '#b30059'}, href='/page-3'),
+        style={"marginRight": 100, 'textAlign': 'right'}),
+    html.Div(
+        html.A("Powrót do CODESYS", href='http://192.168.1.2:8080/webvisu.htm', target="_blank",
+               style={'textAlign': 'right', 'color': '#b30059'}),
         style={"marginRight": 100, 'textAlign': 'right'}
     )
 ])
@@ -105,7 +109,6 @@ page_1_layout = html.Div([
         html.Div(id='container')
     ]),
     html.Div([
-        html.Div(id='result'),
         html.Div(id='Process_Parameters'),
         html.Br(),
         html.Div(
@@ -148,15 +151,16 @@ page_1_layout = html.Div([
     html.Div(
         dcc.Link('Analiza procesu wykrawania Strefa III oraz IV ', style={'textAlign': 'right', 'color': '#b30059'},
                  href='/page-3'),
+        style={"marginRight": 100, 'textAlign': 'right'}),
+    html.Div(
+        html.A("Powrót do CODESYS", href='http://192.168.1.2:8080/webvisu.htm', target="_blank", style={'textAlign': 'right', 'color': '#b30059'}),
         style={"marginRight": 100, 'textAlign': 'right'}
     )
 
 ])
 
 page_2_layout = html.Div([
-
-    # html.Div(id='edge-sharpness'),
-    html.H1('Analiza procesu wykrawania '),
+    html.H1('Analiza procesu wykrawania Srefa I oraz II '),
     html.Div([
         dcc.Graph(id='live-update-graph-scatter1', animate=False,  ),
         dcc.Graph(id='live-update-graph-scatter2', animate=False,  ),
@@ -194,13 +198,15 @@ page_2_layout = html.Div([
     html.Div(
         dcc.Link('Analiza procesu wykrawania Strefa III oraz IV ', style={'textAlign': 'right', 'color': '#b30059'},
                  href='/page-3'),
+        style={"marginRight": 100, 'textAlign': 'right'}),
+    html.Div(
+        html.A("Powrót do CODESYS", href='http://192.168.1.2:8080/webvisu.htm', target="_blank",
+               style={'textAlign': 'right', 'color': '#b30059'}),
         style={"marginRight": 100, 'textAlign': 'right'}
     )
 ])
 
 page_3_layout = html.Div([
-    # html.Div(id='result'),
-    # html.Div(id='edge-sharpness'),
     html.H1('Analiza procesu wykrawania Strefa III oraz IV'),
     html.Div([
         dcc.Graph(id='live-update-graph-scatter4', animate=False,  ),
@@ -240,5 +246,10 @@ page_3_layout = html.Div([
         dcc.Link('Analiza procesu wykrawania Strefa I oraz II', style={'textAlign': 'right', 'color': '#b30059'},
                  href='/page-2'),
         style={"marginRight": 100, 'textAlign': 'right'}),
+    html.Div(
+        html.A("Powrót do CODESYS", href='http://192.168.1.2:8080/webvisu.htm', target="_blank",
+               style={'textAlign': 'right', 'color': '#b30059'}),
+        style={"marginRight": 100, 'textAlign': 'right'}
+    )
 
 ])
