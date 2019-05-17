@@ -2,16 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="24df6a17-1ddd-4e9d-81c8-68c04ae3c199" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/class_add/DataProcessing.py" beforeDir="false" afterPath="$PROJECT_DIR$/class_add/DataProcessing.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/csv_folder/Part_Maxymos 1_MP-001_2017-04-11_14-53-02_Sila_0_5mm_tepy_0084_OK.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/csv_folder/Part_Maxymos 1_MP-001_2017-04-11_14-53-05_Sila_0_5mm_tepy_0087_OK.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/csv_folder/Part_Maxymos 1_MP-001_2017-04-11_14-54-47_Sila_0_5mm_tepy_0111_OK.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/csv_folder/Part_Maxymos 1_MP-001_2017-04-11_14-54-49_Sila_0_5mm_tepy_0113_OK.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/csv_folder/Part_Maxymos 1_MP-001_2017-04-11_14-54-53_Sila_0_5mm_tepy_0119_OK.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/csv_folder/Part_Maxymos 1_MP-001_2017-04-11_14-57-21_Sila_0_5mm_tepy_0165_NOK.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/csv_folder/Part_Maxymos 1_MP-001_2017-04-11_14-58-23_Sila_0_5mm_tepy_0189_OK.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/csv_folder/Part_Maxymos 1_MP-001_2017-04-11_15-00-44_Sila_0_5mm_tepy_0233_OK.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/csv_folder/Part_Maxymos 1_MP-001_2017-04-11_15-00-47_Sila_0_5mm_tepy_0240_OK.csv" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/csv_folder/Part_Maxymos_1_MP-001_2017-02-22_16-05-28_Sila_bl_trans150obr_000002_OK.csv" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/csv_folder/Part_Maxymos_1_MP-001_2017-02-22_16-05-37_Sila_bl_trans150obr_000019_OK.csv" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/csv_folder/Part_Maxymos_1_MP-001_2017-02-22_16-16-47_Sila_bl_trans050obr_000001_OK.csv" beforeDir="false" />
@@ -23,7 +13,6 @@
       <change beforePath="$PROJECT_DIR$/csv_folder/Part_Maxymos_1_MP-001_2017-03-14_14-23-02_Sila_bl_trans150obr_tepy_027_NOK.csv" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/csv_folder/Part_Maxymos_1_MP-001_2017-03-14_14-31-25_Sila_bl_trans150obr_tepy_033_OK.csv" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/csv_folder/Part_Maxymos_1_MP-001_2017-03-14_14-33-14_Sila_bl_trans150obr_tepy_034_OK.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/csv_folder/Part_Maxymos_1_MP-001_2017-03-14_14-33-21_Sila_bl_trans150obr_tepy_035_OK.csv" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/dash_web/Model_Manipulation.py" beforeDir="false" afterPath="$PROJECT_DIR$/dash_web/Model_Manipulation.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -49,8 +38,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/class_add/DataProcessing.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" column="32" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
+            <state relative-caret-position="408">
+              <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
             </state>
           </provider>
         </entry>
@@ -58,8 +47,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/dash_web/Model_Manipulation.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-459">
-              <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
+            <state relative-caret-position="204">
+              <caret line="12" column="5" lean-forward="true" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
               <folding>
                 <element signature="e#1#11#0" expanded="true" />
               </folding>
@@ -175,12 +164,12 @@
         <option value="$PROJECT_DIR$/dash_web/Controller_Interaction.py" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/dash_web/View_Layout.py" />
-        <option value="$PROJECT_DIR$/class_add/DataProcessing.py" />
         <option value="$PROJECT_DIR$/dash_web/Model_Manipulation.py" />
+        <option value="$PROJECT_DIR$/class_add/DataProcessing.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1936" />
@@ -420,7 +409,7 @@
     <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.10958904" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.10958904" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="0" weight="0.31310943" />
       <window_info anchor="bottom" id="Event Log" order="1" sideWeight="0.5014881" side_tool="true" weight="0.32352942" />
@@ -428,7 +417,7 @@
       <window_info anchor="bottom" id="Message" order="3" />
       <window_info anchor="bottom" id="Find" order="4" weight="0.32936078" />
       <window_info anchor="bottom" id="Version Control" order="5" weight="0.32936078" />
-      <window_info active="true" anchor="bottom" id="Run" order="6" sideWeight="0.4985119" visible="true" weight="0.18851571" />
+      <window_info anchor="bottom" id="Run" order="6" sideWeight="0.4985119" weight="0.18851571" />
       <window_info anchor="bottom" id="Debug" order="7" weight="0.39761648" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
@@ -626,10 +615,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/dash_web/Controller_Interaction.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="42" selection-start-line="7" selection-start-column="42" selection-end-line="7" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/class_add/DataProcessing.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="32" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
+        <state relative-caret-position="408">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
         </state>
       </provider>
     </entry>
@@ -647,17 +643,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dash_web/Controller_Interaction.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="42" selection-start-line="7" selection-start-column="42" selection-end-line="7" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dash_web/Model_Manipulation.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-459">
-          <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
+        <state relative-caret-position="204">
+          <caret line="12" column="5" lean-forward="true" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
           <folding>
             <element signature="e#1#11#0" expanded="true" />
           </folding>

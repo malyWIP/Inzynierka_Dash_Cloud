@@ -7,8 +7,8 @@ import os
 
 # path = r'D:\STUDIA\Inżynierka\test\\'
 # moveto = r'D:\STUDIA\Inżynierka\testowy\\'
-path = r'csv_folder\\'
-moveto = r'csv_memory\\'
+path = r'csv_folder//'
+moveto = r'csv_memory//'
 x = 0
 x1 =0
 
@@ -23,15 +23,6 @@ def get_latest(folder):
     except FileNotFoundError:
         print('nie znaleziono pliku')
 
-def File_Change1():
-    global x1
-    folder = r'csv_memory\\'
-    try:
-        x1 = len([os.path.join(folder, f) for f in os.listdir(folder) if f.endswith('.csv')])
-        return x1
-    except FileNotFoundError:
-        print('nie znaleziono pliku')
-        return x1
 
 def file_to_analizes():
     time_sorted_list = None
