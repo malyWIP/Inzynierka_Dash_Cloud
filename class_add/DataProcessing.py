@@ -15,10 +15,10 @@ class DataMove:
         k = 0
         try:
             while self.state !=False and files.__len__() != k:
-                x = str(files[k])
-                b = x.split('\\')
-                src = path + b[2]
-                dst = moveto + b[2]
+                x = files[k]
+                b = x.split('//')
+                src = path + b[1]
+                dst = moveto + b[1]
                 shutil.move(src, dst)
                 k += 1
                 time.sleep(freq)
