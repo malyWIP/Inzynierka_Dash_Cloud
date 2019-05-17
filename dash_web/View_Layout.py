@@ -10,11 +10,11 @@ import flask
 
 
 def get_logo_dash():
-    image = r'images\dash-logo-stripe.png'
+    image = r'images/dash-logo-stripe.png'
     encoded_image = base64.b64encode(open(image, "rb").read())
     logo = html.Div(
         html.Img(
-            src="data:image\png;base64,{}".format(encoded_image.decode()), height="50"
+            src="data:image/png;base64,{}".format(encoded_image.decode()), height="50"
         ),
         style={"marginTop": 0},
         className="sept columns",
@@ -22,7 +22,7 @@ def get_logo_dash():
     return logo
 
 def get_logo_dash_WIP():
-    image = r'images\WIP_Znak.png'
+    image = r'images/WIP_Znak.png'
     encoded_image = base64.b64encode(open(image, "rb").read())
     logo = html.Div(
         html.Img(
@@ -35,11 +35,11 @@ def get_logo_dash_WIP():
 
 
 def get_logo_dash_industry():
-    image = r'images\industry_4.0.png'
+    image = r'images/industry_4.0.png'
     encoded_image = base64.b64encode(open(image, "rb").read())
     logo = html.Div(
         html.Img(
-            src="data:image\png;base64,{}".format(encoded_image.decode()), height="100", width='400'
+            src="data:image/png;base64,{}".format(encoded_image.decode()), height="100", width='400'
         ),
         style={"marginTop": "100", 'textAlign': 'center'},
         className="sept columns",
@@ -49,11 +49,11 @@ def get_logo_dash_industry():
 
 
 def get_logo_dash_press():
-    image = r'images\power_press.png'
+    image = r'images/power_press.png'
     encoded_image = base64.b64encode(open(image, "rb").read())
     logo = html.Div(
         html.Img(
-            src="data:image\png;base64,{}".format(encoded_image.decode()), height="400", width='380'
+            src="data:image/png;base64,{}".format(encoded_image.decode()), height="400", width='380'
         ),
         style={"marginTop": 0, 'textAlign': 'center'},
         className="sept columns",

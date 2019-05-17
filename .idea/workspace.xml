@@ -2,18 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="24df6a17-1ddd-4e9d-81c8-68c04ae3c199" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/csv_folder/Part_Maxymos_1_MP-001_2017-02-22_16-05-28_Sila_bl_trans150obr_000002_OK.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/csv_folder/Part_Maxymos_1_MP-001_2017-02-22_16-05-37_Sila_bl_trans150obr_000019_OK.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/csv_folder/Part_Maxymos_1_MP-001_2017-02-22_16-16-47_Sila_bl_trans050obr_000001_OK.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/csv_folder/Part_Maxymos_1_MP-001_2017-02-22_16-17-42_Sila_bl_trans050obr_000031_OK.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/csv_folder/Part_Maxymos_1_MP-001_2017-02-22_16-18-08_Sila_bl_trans050obr_000045_OK.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/csv_folder/Part_Maxymos_1_MP-001_2017-03-14_14-18-36_Sila_bl_trans150obr_tepy_015_OK.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/csv_folder/Part_Maxymos_1_MP-001_2017-03-14_14-22-14_Sila_bl_trans150obr_tepy_022_OK.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/csv_folder/Part_Maxymos_1_MP-001_2017-03-14_14-22-50_Sila_bl_trans150obr_tepy_024_OK.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/csv_folder/Part_Maxymos_1_MP-001_2017-03-14_14-23-02_Sila_bl_trans150obr_tepy_027_NOK.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/csv_folder/Part_Maxymos_1_MP-001_2017-03-14_14-31-25_Sila_bl_trans150obr_tepy_033_OK.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/csv_folder/Part_Maxymos_1_MP-001_2017-03-14_14-33-14_Sila_bl_trans150obr_tepy_034_OK.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dash_web/Model_Manipulation.py" beforeDir="false" afterPath="$PROJECT_DIR$/dash_web/Model_Manipulation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dash_web/View_Layout.py" beforeDir="false" afterPath="$PROJECT_DIR$/dash_web/View_Layout.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -26,7 +16,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/appMain.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
+            <state relative-caret-position="51">
               <caret line="6" selection-start-line="6" selection-end-line="6" />
               <folding>
                 <element signature="e#24#69#0" expanded="true" />
@@ -39,16 +29,16 @@
         <entry file="file://$PROJECT_DIR$/class_add/DataProcessing.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="408">
-              <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+              <caret line="24" selection-start-line="24" selection-end-line="24" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dash_web/Model_Manipulation.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="5" lean-forward="true" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
+            <state relative-caret-position="187">
+              <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
               <folding>
                 <element signature="e#1#11#0" expanded="true" />
               </folding>
@@ -71,7 +61,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/class_add/DataDelete.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="310">
+            <state relative-caret-position="323">
               <caret line="19" column="39" selection-start-line="19" selection-start-column="31" selection-end-line="19" selection-end-column="39" />
             </state>
           </provider>
@@ -89,17 +79,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dash_web/Controller_Interaction.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="42" selection-start-line="7" selection-start-column="42" selection-end-line="7" selection-end-column="42" />
+            <state relative-caret-position="986">
+              <caret line="58" column="33" lean-forward="true" selection-start-line="58" selection-start-column="33" selection-end-line="58" selection-end-column="33" />
+              <folding>
+                <element signature="e#2#42#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/dash_web/View_Layout.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="62" selection-start-line="13" selection-start-column="62" selection-end-line="13" selection-end-column="62" />
+            <state relative-caret-position="408">
+              <caret line="24" column="34" lean-forward="true" selection-start-line="24" selection-start-column="34" selection-end-line="24" selection-end-column="34" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
@@ -161,15 +154,15 @@
         <option value="$PROJECT_DIR$/test_app/csvwriter.py" />
         <option value="$PROJECT_DIR$/test_app/skrypt.py" />
         <option value="$PROJECT_DIR$/appMain.py" />
-        <option value="$PROJECT_DIR$/dash_web/Controller_Interaction.py" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/dash_web/View_Layout.py" />
         <option value="$PROJECT_DIR$/dash_web/Model_Manipulation.py" />
         <option value="$PROJECT_DIR$/class_add/DataProcessing.py" />
+        <option value="$PROJECT_DIR$/dash_web/Controller_Interaction.py" />
+        <option value="$PROJECT_DIR$/dash_web/View_Layout.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1936" />
@@ -180,6 +173,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -205,7 +199,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -582,6 +575,33 @@
     <entry file="file://$PROJECT_DIR$/test_app/filemodify.py" />
     <entry file="file://$PROJECT_DIR$/function_add/watchfolder.py" />
     <entry file="file://$PROJECT_DIR$/class_add/listener.py" />
+    <entry file="file://$PROJECT_DIR$/appMain.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+          <folding>
+            <element signature="e#24#69#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/class_add/DataProcessing.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dash_web/Model_Manipulation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
+          <folding>
+            <element signature="e#1#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -592,46 +612,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Anaconda3/Lib/base64.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/appMain.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
-          <folding>
-            <element signature="e#24#69#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dash_web/View_Layout.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="62" selection-start-line="13" selection-start-column="62" selection-end-line="13" selection-end-column="62" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dash_web/Controller_Interaction.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="42" selection-start-line="7" selection-start-column="42" selection-end-line="7" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/class_add/DataProcessing.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/class_add/DataDelete.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="310">
+        <state relative-caret-position="323">
           <caret line="19" column="39" selection-start-line="19" selection-start-column="31" selection-end-line="19" selection-end-column="39" />
         </state>
       </provider>
@@ -643,12 +626,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dash_web/Model_Manipulation.py">
+    <entry file="file://$USER_HOME$/Anaconda3/Lib/base64.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dash_web/Controller_Interaction.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="5" lean-forward="true" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
+        <state relative-caret-position="986">
+          <caret line="58" column="33" lean-forward="true" selection-start-line="58" selection-start-column="33" selection-end-line="58" selection-end-column="33" />
           <folding>
-            <element signature="e#1#11#0" expanded="true" />
+            <element signature="e#2#42#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dash_web/View_Layout.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="34" lean-forward="true" selection-start-line="24" selection-start-column="34" selection-end-line="24" selection-end-column="34" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
           </folding>
         </state>
       </provider>
