@@ -8,7 +8,7 @@ import os
 # path = r'D:\STUDIA\Inżynierka\test\\'
 # moveto = r'D:\STUDIA\Inżynierka\testowy\\'
 path = r'csv_folder//'
-moveto = r'csv_memory//'
+moveto = r'dash_csv//'
 x = 0
 x1 =0
 
