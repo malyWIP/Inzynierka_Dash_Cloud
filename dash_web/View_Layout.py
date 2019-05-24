@@ -153,7 +153,7 @@ page_1_layout = html.Div([
                  href='/page-3'),
         style={"marginRight": 100, 'textAlign': 'right'}),
     html.Div(
-        html.A("Powrót do CODESYS", href='http://192.168.1.2:8080/webvisu.htm', target="_blank", style={'textAlign': 'right', 'color': '#b30059'}),
+        html.A("Powrót do CODESYS", href='http://192.168.1.2:8080/visu.htm', target="_blank", style={'textAlign': 'right', 'color': '#b30059'}),
         style={"marginRight": 100, 'textAlign': 'right'}
     )
 
