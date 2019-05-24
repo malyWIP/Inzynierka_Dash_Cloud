@@ -3,7 +3,23 @@
   <component name="ChangeListManager">
     <list default="true" id="24df6a17-1ddd-4e9d-81c8-68c04ae3c199" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dash_web/View_Layout.py" beforeDir="false" afterPath="$PROJECT_DIR$/dash_web/View_Layout.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csv_folder/Part_Maxymos 1_MP-001_2017-04-11_14-53-02_Sila_0_5mm_tepy_0084_OK.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/csv_folder/Part_Maxymos 1_MP-001_2017-04-11_14-53-05_Sila_0_5mm_tepy_0087_OK.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/csv_folder/Part_Maxymos 1_MP-001_2017-04-11_14-54-47_Sila_0_5mm_tepy_0111_OK.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/csv_folder/Part_Maxymos 1_MP-001_2017-04-11_14-54-49_Sila_0_5mm_tepy_0113_OK.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/csv_folder/Part_Maxymos 1_MP-001_2017-04-11_14-54-53_Sila_0_5mm_tepy_0119_OK.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/csv_folder/Part_Maxymos 1_MP-001_2017-04-11_14-57-21_Sila_0_5mm_tepy_0165_NOK.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/csv_folder/Part_Maxymos 1_MP-001_2017-04-11_14-58-23_Sila_0_5mm_tepy_0189_OK.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/csv_folder/Part_Maxymos 1_MP-001_2017-04-11_15-00-44_Sila_0_5mm_tepy_0233_OK.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/csv_folder/Part_Maxymos 1_MP-001_2017-04-11_15-00-47_Sila_0_5mm_tepy_0240_OK.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/csv_folder/Part_Maxymos_1_MP-001_2017-03-14_14-33-21_Sila_bl_trans150obr_tepy_035_OK.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/csv_memory/Part_Maxymos_1_MP-001_2017-02-22_16-05-30_Sila_bl_trans150obr_000007_OK.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/csv_memory/Part_Maxymos_1_MP-001_2017-02-22_16-05-34_Sila_bl_trans150obr_000014_OK.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/csv_memory/Part_Maxymos_1_MP-001_2017-02-22_16-05-47_Sila_bl_trans150obr_000036_OK.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/csv_memory/Part_Maxymos_1_MP-001_2017-02-22_16-05-55_Sila_bl_trans150obr_000049_OK.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/csv_memory/Part_Maxymos_1_MP-001_2017-02-22_16-06-05_Sila_bl_trans150obr_000067_OK.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/csv_memory/Part_Maxymos_1_MP-001_2017-02-22_16-06-10_Sila_bl_trans150obr_000075_OK.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dash_web/Controller_Interaction.py" beforeDir="false" afterPath="$PROJECT_DIR$/dash_web/Controller_Interaction.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,8 +32,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/appMain.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="6" selection-start-line="6" selection-end-line="6" />
+            <state relative-caret-position="153">
+              <caret line="9" selection-start-line="9" selection-end-line="9" selection-end-column="31" />
               <folding>
                 <element signature="e#24#69#0" expanded="true" />
               </folding>
@@ -28,8 +44,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/class_add/DataProcessing.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="24" selection-start-line="24" selection-end-line="24" />
+            <state relative-caret-position="383">
+              <caret line="31" column="29" selection-start-line="3" selection-end-line="31" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -37,23 +53,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dash_web/Model_Manipulation.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
+            <state relative-caret-position="4709">
+              <caret line="277" column="20" selection-start-line="277" selection-start-column="20" selection-end-line="277" selection-end-column="20" />
               <folding>
                 <element signature="e#1#11#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="561">
-                <caret line="33" column="44" selection-start-line="33" selection-start-column="44" selection-end-line="33" selection-end-column="44" />
-              </first_editor>
-              <second_editor />
             </state>
           </provider>
         </entry>
@@ -67,20 +71,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/class_add/ButtonDef.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="39" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/dash_web/Controller_Interaction.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="986">
-              <caret line="58" column="33" lean-forward="true" selection-start-line="58" selection-start-column="33" selection-end-line="58" selection-end-column="33" />
+            <state relative-caret-position="1411">
+              <caret line="83" column="37" selection-start-line="83" selection-start-column="8" selection-end-line="83" selection-end-column="37" />
               <folding>
                 <element signature="e#2#42#0" expanded="true" />
               </folding>
@@ -88,20 +83,8 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/dash_web/View_Layout.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="24" column="34" lean-forward="true" selection-start-line="24" selection-start-column="34" selection-end-line="24" selection-end-column="34" />
-              <folding>
-                <element signature="e#0#11#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/Anaconda3/Lib/base64.py">
+        <entry file="file://$PROJECT_DIR$/class_add/ButtonDef.py">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
@@ -153,12 +136,13 @@
         <option value="$PROJECT_DIR$/class_add/listener.py" />
         <option value="$PROJECT_DIR$/test_app/csvwriter.py" />
         <option value="$PROJECT_DIR$/test_app/skrypt.py" />
-        <option value="$PROJECT_DIR$/appMain.py" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/dash_web/Model_Manipulation.py" />
         <option value="$PROJECT_DIR$/class_add/DataProcessing.py" />
-        <option value="$PROJECT_DIR$/dash_web/Controller_Interaction.py" />
         <option value="$PROJECT_DIR$/dash_web/View_Layout.py" />
+        <option value="$PROJECT_DIR$/dash_web/sendRPi.py" />
+        <option value="$PROJECT_DIR$/appMain.py" />
+        <option value="$PROJECT_DIR$/dash_web/Controller_Interaction.py" />
       </list>
     </option>
   </component>
@@ -291,6 +275,27 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="sendRPi" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Dash_App" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/dash_web" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/dash_web/sendRPi.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="skrypt" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Dash_App" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -312,34 +317,13 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="watchfolder" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Dash_App" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/function_add" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/function_add/watchfolder.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Python.appMain" />
+        <item itemvalue="Python.sendRPi" />
         <item itemvalue="Python.skrypt" />
         <item itemvalue="Python.csvwriter" />
         <item itemvalue="Python.listener" />
-        <item itemvalue="Python.watchfolder" />
       </list>
     </recent_temporary>
   </component>
@@ -398,19 +382,18 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <frame x="-1927" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.10958904" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.109054856" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="0" weight="0.31310943" />
       <window_info anchor="bottom" id="Event Log" order="1" sideWeight="0.5014881" side_tool="true" weight="0.32352942" />
       <window_info anchor="bottom" id="Python Console" order="2" weight="0.32936078" />
       <window_info anchor="bottom" id="Message" order="3" />
       <window_info anchor="bottom" id="Find" order="4" weight="0.32936078" />
-      <window_info anchor="bottom" id="Version Control" order="5" weight="0.32936078" />
-      <window_info anchor="bottom" id="Run" order="6" sideWeight="0.4985119" weight="0.18851571" />
+      <window_info anchor="bottom" id="Version Control" order="5" weight="0.25135428" />
+      <window_info anchor="bottom" id="Run" order="6" sideWeight="0.4985119" weight="0.24504249" />
       <window_info anchor="bottom" id="Debug" order="7" weight="0.39761648" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
@@ -441,14 +424,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/Anaconda3/Lib/selectors.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="328" selection-start-line="328" selection-end-line="328" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/_plotly_utils/basevalidators.py" />
     <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/dash/_watch.py" />
     <entry file="file://$USER_HOME$/Anaconda3/Lib/copy.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -575,32 +550,8 @@
     <entry file="file://$PROJECT_DIR$/test_app/filemodify.py" />
     <entry file="file://$PROJECT_DIR$/function_add/watchfolder.py" />
     <entry file="file://$PROJECT_DIR$/class_add/listener.py" />
-    <entry file="file://$PROJECT_DIR$/appMain.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
-          <folding>
-            <element signature="e#24#69#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/class_add/DataProcessing.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dash_web/Model_Manipulation.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
-          <folding>
-            <element signature="e#1#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+    <entry file="file:////192.168.1.2/homepi/Inzynierka/Dash_App/skrypt/Integration.py">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
@@ -612,6 +563,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/Anaconda3/Lib/base64.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dash_web/View_Layout.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2943">
+          <caret line="58" column="33" lean-forward="true" selection-start-line="58" selection-start-column="33" selection-end-line="58" selection-end-column="33" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/class_add/ButtonDef.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/class_add/DataDelete.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
@@ -619,32 +586,46 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/class_add/ButtonDef.py">
+    <entry file="file://$PROJECT_DIR$/dash_web/sendRPi.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="39" />
+        <state relative-caret-position="1122">
+          <caret line="66" column="1" selection-start-line="66" selection-start-column="1" selection-end-line="66" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Anaconda3/Lib/base64.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dash_web/Controller_Interaction.py">
+    <entry file="file://$PROJECT_DIR$/dash_web/Model_Manipulation.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="986">
-          <caret line="58" column="33" lean-forward="true" selection-start-line="58" selection-start-column="33" selection-end-line="58" selection-end-column="33" />
+        <state relative-caret-position="4709">
+          <caret line="277" column="20" selection-start-line="277" selection-start-column="20" selection-end-line="277" selection-end-column="20" />
           <folding>
-            <element signature="e#2#42#0" expanded="true" />
+            <element signature="e#1#11#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dash_web/View_Layout.py">
+    <entry file="file://$PROJECT_DIR$/class_add/DataProcessing.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="34" lean-forward="true" selection-start-line="24" selection-start-column="34" selection-end-line="24" selection-end-column="34" />
+        <state relative-caret-position="383">
+          <caret line="31" column="29" selection-start-line="3" selection-end-line="31" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/appMain.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" selection-start-line="9" selection-end-line="9" selection-end-column="31" />
           <folding>
-            <element signature="e#0#11#0" expanded="true" />
+            <element signature="e#24#69#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dash_web/Controller_Interaction.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1411">
+          <caret line="83" column="37" selection-start-line="83" selection-start-column="8" selection-end-line="83" selection-end-column="37" />
+          <folding>
+            <element signature="e#2#42#0" expanded="true" />
           </folding>
         </state>
       </provider>

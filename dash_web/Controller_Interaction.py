@@ -83,7 +83,7 @@ def start_stop_button(btn1, btn2, btn3):
         callbacks_vars.update_n_clicks(btn1, 1)
         process_tester.setState(True)
         reset_data.setState(False)
-        process_tester.move_to_directory(path, moveto, freq)
+        process_tester.move_to_directory(path, moveto, 0.5)
 
     elif btn2 != callbacks_vars.n_clicks[2]:
         # It was triggered by a click on the button 1
