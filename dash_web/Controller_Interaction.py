@@ -51,7 +51,7 @@ def page_1_dropdown(value):
               [Input('dropdown-interval-control', 'value')])
 def update_interval_log_update(interval_rate):
     if interval_rate == 'fast':
-        return 5000
+        return 2500
 
     elif interval_rate == 'regular':
         return 7000
